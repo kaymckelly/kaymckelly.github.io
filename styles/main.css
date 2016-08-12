@@ -1,4 +1,11 @@
 .pageTitle {
-  font-family: cursive;
-  font-size: 40px;
+  font-family: monospace;
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+.bodyText {
+  font-family: serif;
+  font-size: 1.8rem;
+  text-align: justify;
 }
