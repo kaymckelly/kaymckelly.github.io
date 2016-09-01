@@ -1,0 +1,24 @@
+.navTitle {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.catBrand {
+  height: 100%;
+}
+
+.pageTitle {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 3rem;
+}
+
+.bodyText {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7rem;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+}

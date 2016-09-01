@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GeeksCat</title>
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- styles: general -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Bootstrap theme -->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Ubuntu:300" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/styles/main.css">
+    <!-- styles: personal -->
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <!-- TODO: add navbar-fixed-top after putting appropriate padding on body content -->
@@ -26,7 +25,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- TODO: add logo, remove link? -->
-          <a class="navbar-brand" href="/index.html">GeeksCat</a>
+          <a class="navbar-brand navTitle" href="/index.html">GeeksCat</a>
         </div>
         <div class="collapse navbar-collapse" id="mobileNav">
           <ul class="nav navbar-nav">
@@ -34,7 +33,7 @@
               <a href="/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li>
-              <a href="/about.html">About</a>
+              <a href="/app/about/about.html">About</a>
             </li>
             <li>
               <a href="#">Portfolio</a>
@@ -54,8 +53,8 @@
     </nav>
     <div class="container-fluid">
       <div class="jumbotron">
-        <h1>Kay McKelly</h1>
-        <p>
+        <h1 class="pageTitle">Kay McKelly</h1>
+        <p class="bodyText">
           For a limited time only, this front-end focused full stack developer is available for hire in Seattle, WA.
         </p>
         <a class="btn btn-primary btn-lg" href="/resume.html" role="button">Learn More</a>
