@@ -1,3 +1,17 @@
+/* required by ui-bootstrap */
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer;
+}
+
+
+/* entire page */
+body {
+  padding-top: 100px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* nav */
 .navTitle {
   font-family: 'Fredericka the Great', cursive;
 }
@@ -6,11 +20,15 @@
   height: 100%;
 }
 
+
+/* titles & headers */
 .pageTitle {
   font-family: 'Fredericka the Great', cursive;
   font-size: 3rem;
 }
 
+
+/* home */
 .bodyText {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.7rem;
