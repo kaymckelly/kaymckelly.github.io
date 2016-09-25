@@ -6,9 +6,6 @@
       'ui.bootstrap',
       'ngAnimate',
       'ngTouch',
-      'ui.router'
-    ])
-    .config(config);
-
-    function config()
+      'ngRoute'
+    ]);
 })();
