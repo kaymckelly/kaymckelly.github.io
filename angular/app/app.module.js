@@ -7,5 +7,5 @@
       'ngAnimate',
       'ngTouch',
       'ngRoute'
-    ])
+    ]);
 })();
