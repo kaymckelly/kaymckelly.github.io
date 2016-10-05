@@ -10,19 +10,19 @@ section {
 }
 
 .bg-1 {
-	background: url('./visual/galaxy.jpg') no-repeat center center fixed;
+	background: url('../visual/galaxy.jpg') no-repeat center center fixed;
     color: #fff;
     background-size: cover;
 }
 
 .bg-2 {
-	background: url('./visual/falling.jpg') no-repeat top center fixed;
+	background: url('../visual/falling.jpg') no-repeat top center fixed;
     color: #fff;
     background-size: cover;
 }
 
 .bg-3 {
-	background: url('./visual/lightbulbs.png') no-repeat bottom center fixed;
+	background: url('../visual/lightbulbs.png') no-repeat bottom center fixed;
     color: #fff;
     background-size: cover;
 }
