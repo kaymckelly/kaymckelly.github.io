@@ -18,7 +18,6 @@ a:hover {
   height: 450px;
   padding-top: 50px;
   padding-bottom: 50px;
-  overflow: auto;
 }
 
 .bg1 {
@@ -61,15 +60,17 @@ h3 {
 }
 
 .screenshot {
-  height: auto;
-  width: 300px;
+  max-height: 300px;
+  margin-bottom: 20px;
 }
 
 
 /**** Footer ****/
 footer {
+  position: static;
+  width: 100%;
+  z-index: -1;
   padding-top: 10px;
-  padding-bottom: 5px;
   margin-top: 250px;
-  background-color: rgba(223, 229, 236, 0.2);
+  background-color: #dfe5ec;
 }
