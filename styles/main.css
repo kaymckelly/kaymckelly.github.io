@@ -15,28 +15,28 @@ a:hover {
 }
 
 .bgContain {
-    height: 450px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: auto;
+  height: 450px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: auto;
 }
 
 .bg1 {
 	background: url('../visual/space1.png') no-repeat center center fixed;
-    color: #fff;
-    background-size: cover;
+  color: #04001E;
+  background-size: cover;
 }
 
 .bg2 {
 	background: url('../visual/space2.jpg') no-repeat top center fixed;
-    color: #fff;
-    background-size: cover;
+  color: #04001E;
+  background-size: cover;
 }
 
 .bg3 {
 	background: url('../visual/space3.png') no-repeat bottom center fixed;
-    color: #fff;
-    background-size: cover;
+  color: #04001E;
+  background-size: cover;
 }
 
 h1 {
@@ -50,7 +50,7 @@ h1 {
 }
 
 .divider {
-    height: 20px;
+  height: 20px;
 }
 
 
@@ -60,11 +60,16 @@ h3 {
   font-size: 2.5em;
 }
 
+.screenshot {
+  height: auto;
+  width: 300px;
+}
+
 
 /**** Footer ****/
 footer {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    margin-top: 250px;
-    background-color: rgba(223, 229, 236, 0.2);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 250px;
+  background-color: rgba(223, 229, 236, 0.2);
 }
