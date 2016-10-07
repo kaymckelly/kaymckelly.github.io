@@ -1,0 +1,84 @@
+/**** General ****/
+body {
+  background-color: #dfe5ec;
+  color: #04001E;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+a {
+  color: #005A49;
+}
+
+a:hover {
+  color: #400061;
+}
+
+.bgContain {
+  height: 450px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bg1 {
+	background: url('../visual/space1.png') no-repeat center center fixed;
+  color: #04001E;
+  background-size: cover;
+}
+
+.bg2 {
+	background: url('../visual/space2.jpg') no-repeat top center fixed;
+  color: #04001E;
+  background-size: cover;
+}
+
+.bg3 {
+	background: url('../visual/space3.png') no-repeat bottom center fixed;
+  color: #04001E;
+  background-size: cover;
+}
+
+h1 {
+  color: #dfe5ec;
+  font-family: 'Megrim', cursive;
+  font-size: 5em;
+}
+
+.mainTitleDiv {
+  background-color: rgba(223, 229, 236, 0.2);
+}
+
+.subtitle {
+  color: #dfe5ec;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.divider {
+  height: 20px;
+}
+
+
+/**** Text Sections ****/
+h3 {
+  font-family: 'Megrim', cursive;
+  font-size: 2.5em;
+}
+
+.screenshot {
+  max-height: 200px;
+}
+
+.contactBtn {
+  margin-top: 30px;
+}
+
+
+/**** Footer ****/
+footer {
+  position: static;
+  width: 100%;
+  z-index: -1;
+  padding-top: 10px;
+  margin-top: 200px;
+  background-color: #dfe5ec;
+}
