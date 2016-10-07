@@ -21,7 +21,7 @@
       <div class="mainTitleDiv">
         <h1>Kay McKelly</h1>
       </div>
-      <p class="lead">Full Stack Developer</p>
+      <p class="lead subtitle">Full Stack Developer</p>
     </div>
 
     <div class="container">
@@ -29,7 +29,7 @@
         <div class="col-md-6">
           <h3>About</h3>
           <p class="text-justify">
-            I'm a front-end focused full stack developer. I'm trained in the NEAP (Node, Express, Angular, PostgreSQL) stack and have been teaching myself Java and Python in my spare time. My interests include accessibility, mobile-first development, user experience, security, and privacy.
+            I'm a front-end focused full stack developer. I'm trained in the NEAP (Node, Express, Angular, PostgreSQL) stack and have been teaching myself Java and Python in my spare time. My interests include accessibility, mobile-first development, user interface design, security, and privacy.
           </p>
           <p class="text-justify">
             Teamwork and diversity in tech are deeply important to me. I thrive on having coworkers to bounce ideas off of, pair-programming, and collaboration. My ideal work environment is one in which everyone values communication.
@@ -40,7 +40,7 @@
           <p class="text-justify">
             Currently on the job market in Seattle, WA. On-site or remote work is welcome. I cannot relocate at this time.
           </p>
-          <button type="button" class="btn btn-lg btn-info center-block" src="./files/KayMcKelly.pdf">Click here for my resum&Eacute;</button>
+          <a class="btn btn-lg btn-info center-block" href="./files/KayMcKelly.pdf" role="button">Resum&Eacute;</a>
         </div>
       </div>
     </div>
@@ -58,28 +58,40 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-justify">
-          <h3>Boost</h3>
-          <p>
-            My Capstone project at Galvanize. Built with Angular 1, an Express server, and a PostgreSQL database, this app connects strangers to help each other out. Boost also teaches good self-care techniques, with a meditation timer and a self-care checklist.
-          </p>
-          <img src="./visual/boostScreenshot1.png" class="img-thumbnail img-responsive screenshot" alt="Boost app screenshot 1" />
-          <button type="button" class="btn btn-md btn-info pull-right" href="https://github.com/kaymckelly/boost">See the code on Github</button>
+          <div class="thumbnail">
+            <img src="./visual/boostScreenshot1.png" class="img-responsive screenshot center-block" alt="Boost app screenshot 1">
+            <div class="caption">
+              <h3>Boost</h3>
+              <p>
+                I built this Capstone project in two weeks. Built with Angular 1, an Express server, and a PostgreSQL database, this app connects strangers to help each other out. Boost also teaches good self-care techniques. It includes a meditation timer, inspirational quotes, and a self-care checklist.
+              </p>
+              <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/boost" role="button">See the code on Github</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-justify">
-          <h3>SNC</h3>
-          <p>
-            Better known by it's full name, Seattle Neighborhood Challenge, this was a group project, conceived of and written with five other teammates.
-          </p>
-          <img src="./visual/sncScreenshot1.png" class="img-thumbnail img-responsive screenshot" alt="SNC app screenshot 1" />
-          <button type="button" class="btn btn-md btn-info pull-right" href="https://github.com/kaymckelly/snc">See the code on Github</button>
+          <div class="thumbnail">
+            <img src="./visual/sncScreenshot1.png" class="img-responsive screenshot center-block" alt="SNC app screenshot 1">
+            <div class="caption">
+              <h3>SNC</h3>
+              <p>
+                A group project built in a week, Seattle Neighborhood Challenge is a React Native app with an Express server. I chose the role of project manager, which I did in addition to working on the code with five teammates. We used the Google Maps API, oAuth with Facebook login, and Knex query builder.
+              </p>
+              <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/snc" role="button">See the code on Github</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-justify">
-          <h3>Brows on Fleek</h3>
-          <p>
-            Brows on Fleek was the first project I completed while at Galvanize. It's a front-end project that utilizes Twitter Bootstrap, HTML5, CSS3, and the Google Maps API.
-          </p>
-          <img src="./visual/browsScreenshot1.png" class="img-thumbnail img-responsive screenshot" alt="Brows on Fleek app screenshot 1" />
-          <button type="button" class="btn btn-md btn-info pull-right" href="https://github.com/kaymckelly/brows-on-fleek">See the code on Github</button>
+          <div class="thumbnail">
+            <img src="./visual/browsScreenshot1.png" class="img-responsive screenshot center-block" alt="Brows on Fleek app screenshot 1">
+            <div class="caption">
+              <h3>Brows on Fleek</h3>
+              <p>
+                Brows on Fleek was the first project I completed while at Galvanize. It's a front-end project that utilizes Twitter Bootstrap, HTML5, CSS3, and the Google Maps API. This app was originally inspired by a gif of Frida Kahlo (pictured).
+              </p>
+              <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/brows-on-fleek" role="button">See the code on Github</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -88,6 +100,8 @@
 
     <div class="bg3 bgContain text-center">
       <h1 class="mainTitleDiv">Contact</h1>
+
+      <button type="button" class="btn btn-lg btn-info contactBtn">Email Me</button>
 
       <footer>
         <div class="container text-center">
