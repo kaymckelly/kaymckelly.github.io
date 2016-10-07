@@ -1,4 +1,10 @@
 # kaymckelly.github.io
-Studious Waffle: initially suggested title of this repo
+Initially suggested title of this repo: studious-waffle
 
-In reality, I expect this will eventually be some sort of portfolio-style/demo website. I own a domain name, and should probably put that to some use.
+Branches for this project were named after the renamed animals meme and have included:
+- dangerNoodle (snake)
+- trashPanda (raccoon)
+- fartSquirrel (skunk)
+- electricNopeRope (electric eel)
+
+Portfolio-style site to demonstrate my dev skills.
