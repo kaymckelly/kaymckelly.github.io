@@ -6,5 +6,6 @@ Branches for this project were named after the renamed animals meme and have inc
 - trashPanda (raccoon)
 - fartSquirrel (skunk)
 - electricNopeRope (electric eel)
+- stabRabbit (porcupine)
 
 Portfolio-style site to demonstrate my dev skills.
