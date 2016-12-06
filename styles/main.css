@@ -4,6 +4,7 @@ body {
   color: #04001E;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
+  padding-top: 60px;
 }
 
 a {
@@ -13,6 +14,9 @@ a {
 a:hover {
   color: #400061;
 }
+
+
+/**** Parallax effect ****/
 
 .bgContain {
   height: 450px;
@@ -38,6 +42,9 @@ a:hover {
   background-size: cover;
 }
 
+
+/**** General Part II ****/
+
 h1 {
   color: #F0F7FF;
   font-family: 'Megrim', cursive;
@@ -46,6 +53,7 @@ h1 {
 
 .mainTitleDiv {
   background-color: rgba(240, 247, 255, 0.2);
+  padding-bottom: 5px;
 }
 
 .subtitle {
@@ -56,6 +64,54 @@ h1 {
 .divider {
   height: 20px;
 }
+
+
+/**** Nav ****/
+/*header nav {
+  background: rgba(240, 247, 255, 0.2);
+  color: #F0F7FF;
+  position: fixed;
+  width: 100%;
+}*/
+
+
+.navbar-header {
+  float: none;
+}
+/*NOTE: in original code, deemed unnecessary*/
+/*.navbar-left {
+  float: none !important;
+}*/
+.navbar-toggle {
+  display: block;
+}
+/*NOTE: in original code, deemed unnecessary*/
+/*.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}*/
+/*.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}*/
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+  /*margin-top: 7.5px;*/
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.collapse.in{
+  display:block !important;
+}
+
 
 
 /**** Text Sections ****/
