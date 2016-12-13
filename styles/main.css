@@ -17,7 +17,7 @@ a:hover {
 h1 {
   color: #F0F7FF;
   font-family: 'Megrim', cursive;
-  font-size: 5em;
+  font-size: 4.3em;
 }
 
 .mainTitleDiv {
@@ -124,12 +124,6 @@ h3 {
 .middleBtn {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.thumbnail {
-  overflow: hidden;
-  width: 100%;
-  height: 200px;
 }
 
 .contactBtn {
