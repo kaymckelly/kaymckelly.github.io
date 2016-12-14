@@ -144,3 +144,10 @@ footer {
   margin-top: 200px;
   background-color: #F0F7FF;
 }
+
+
+/**** Page-specific: projects ****/
+.limitHeight {
+  height: 350px;
+  align-items: center;
+}
