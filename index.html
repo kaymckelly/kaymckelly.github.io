@@ -28,7 +28,7 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-      <div class="navbar-collapse collapse">
+      <nav class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li>
             <a href="/">Home</a>
@@ -36,23 +36,24 @@
           <li>
             <a href="./projects.html">Projects</a>
           </li>
+          <!-- TODO: once page is made, add -->
           <!-- <li>
             <a href="#">Spare Time</a>
           </li> -->
         </ul>
-      </div>
+      </nav>
     </nav>
 
     <div class="bg1 bgContain text-center">
-      <div class="mainTitleDiv">
+      <header class="mainTitleDiv">
         <h1>Kay McKelly</h1>
-      </div>
-      <p class="lead subtitle">Front-End Developer</p>
+      </header>
+      <h5 class="subtitle">Front-End Developer</h5>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <article class="col-md-6">
           <h3>About</h3>
           <p class="text-justify">
             I'm a front-end developer with significant back-end experience. I'm trained in the NEAP (Node, Express, Angular, PostgreSQL) stack and have been teaching myself Java and Python in my spare time. My interests include accessibility, mobile-first development, user interface design, security, and privacy.
@@ -61,10 +62,10 @@
             Teamwork and diversity in tech are deeply important to me. I thrive on having coworkers to bounce ideas off of, pair-programming, and collaboration. My ideal work environment is one in which everyone values communication.
           </p>
           <p class="text-justify">
-            My journey to becoming a software developer started in 1998, when I started building websites with Geocities. After that, I moved on to editing CSS for Livejournal layouts. Throughout most of high school, I handwrote my notes in HTML. In 2015 I started teaching myself jQuery. Seven months later, I started the web development immersive course at <a href="http://www.galvanize.com/campuses/seattle-pioneer-square/">Galvanize Seattle</a>.
+            My journey to becoming a software developer started in 1998, when I started building websites with Geocities. After that, I moved on to editing CSS for Livejournal layouts. Throughout most of high school, I handwrote my notes with HTML tags. In 2015 I started teaching myself jQuery. Seven months later, I started the web development immersive course at <a href="http://www.galvanize.com/campuses/seattle-pioneer-square/">Galvanize Seattle</a>.
           </p>
-        </div>
-        <div class="col-md-5 col-md-offset-1">
+        </article>
+        <aside class="col-md-5 col-md-offset-1">
           <h3>Interested in hiring me?</h3>
           <p class="text-justify">
             Currently on the job market in Seattle, WA. On-site or remote work is welcome. I cannot relocate at this time.
@@ -72,16 +73,16 @@
           <a class="btn btn-lg btn-info center-block" href="./files/KayMcKelly.pdf" role="button">Resum&Eacute;</a>
           <a class="btn btn-lg btn-info center-block middleBtn" href="https://www.linkedin.com/in/kaymckelly" role="button">LinkedIn</a>
           <a class="btn btn-lg btn-info center-block" href="https://github.com/kaymckelly" role="button">Github</a>
-        </div>
+        </aside>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="bg2 bgContain text-center">
-      <div class="mainTitleDiv">
+      <header class="mainTitleDiv">
         <h1>Skills</h1>
-      </div>
+      </header>
     </div>
 
     <div class="divider"></div>
@@ -93,7 +94,7 @@
         </aside>
         <section class="col-sm-9">
           <p>
-            Advanced Beginner: begins to create and identify conditional rules; rules have nuance and become conditional in nature
+            Advanced Beginner: begins to create and identify conditional rules; rules have nuance
           </p>
           <ul>
             <li>Python</li>
@@ -108,13 +109,13 @@
         </aside>
         <section class="col-sm-9">
           <p>
-            Competence: can start using advice in context; learns organizing principles; higher order rules shape contexts and conditions; deliberate planning, formulates routines
+            Competence: can start using advice in context; learns organizing principles; higher order rules shape contexts and conditions
           </p>
           <ul>
             <li>Test-driven development</li>
             <li>Security and privacy</li>
             <li>oAuth</li>
-            <li>Mobile development</li>
+            <li>Cross-platform mobile development (e.g. React Native)</li>
           </ul>
         </section>
       </div>
@@ -128,11 +129,11 @@
             Proficiency: no longer struggles with basic rules; uses pattern recognition to assess what to do and uses rules to determine how to do it; intuition aides in identifying the situation
           </p>
           <ul>
-            <li>Node</li>
-            <li>Express</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
             <li>PostgreSQL</li>
             <li>SQL</li>
-            <li>Knex</li>
+            <li>Knex.js</li>
             <li>React Native</li>
             <li>Flexbox</li>
             <li>Pug (formerly Jade)</li>
@@ -140,7 +141,7 @@
             <li>Chrome developer tools</li>
             <li>UX/UI</li>
             <li>Git/Github</li>
-            <li>Accessibility</li>
+            <li>Accessibility (as set forth by <a href="http://webaim.org/">WebAIM</a>)</li>
             <li>Photoshop</li>
           </ul>
         </section>
@@ -155,41 +156,17 @@
             Expertise: sees big picture; just "does what works"; transcends reliance on rules/guidelines/maxims; intuitive grasp of situations based on deep understanding; has a vision of what is possible
           </p>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
             <li>Bootstrap</li>
-            <li>Angular</li>
-            <li>Javascript</li>
+            <li>Semantic HTML</li>
+            <li>Angular.js</li>
+            <li>JavaScript</li>
             <li>GIMP (GNU Image Manipulation Program)</li>
             <li>Pair programming</li>
             <li>Agile workflow</li>
           </ul>
         </section>
-      </div>
-
-
-      <!-- TODO: redistribute projects explanations -->
-        <!-- 
-        <div class="col-md-4">
-          <h3>SNC</h3>
-          <a href="./visual/sncScreenshot1.png" class="thumbnail">
-            <img src="./visual/sncScreenshot1.png" alt="SNC screenshot of main view with map" />
-          </a>
-          <p class="text-justify">
-            A group project built in a week, Seattle Neighborhood Challenge is a React Native app with an Express server. We chose React Native so SNC could function as a native app on both ios and android. I acted as project manager, in addition to contributing to the codebase. We used the Google Maps API, oAuth with Facebook login, Knex query builder, and an Agile workflow.
-          </p>
-          <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/snc" role="button">See the code on Github</a>
-        </div>
-        <div class="col-md-4">
-          <h3>Brows on Fleek</h3>
-          <a href="/visual/browsScreenshot1.png" class="thumbnail">
-            <img src="./visual/browsScreenshot1.png" alt="Brows on Fleek app screenshot 1">
-          </a>
-          <p class="text-justify">
-            Brows on Fleek was the first project I completed while at Galvanize. Designed to help people to find places to get their eyebrows done within a given radius, this project was focused on front-end development and using APIs. It's a front-end project that utilizes Twitter Bootstrap, HTML5, CSS3, and the Google Maps API.
-          </p>
-          <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/brows-on-fleek" role="button">See the code on Github</a>
-        </div> -->
       </div>
     </div>
 
