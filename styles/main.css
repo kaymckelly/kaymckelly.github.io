@@ -1,6 +1,6 @@
 /**** General ****/
 body {
-  background-color: #dfe5ec;
+  background-color: #F0F7FF;
   color: #04001E;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
@@ -14,6 +14,29 @@ a:hover {
   color: #400061;
 }
 
+h1 {
+  color: #F0F7FF;
+  font-family: 'Megrim', cursive;
+  font-size: 4.3em;
+}
+
+.mainTitleDiv {
+  background-color: rgba(240, 247, 255, 0.2);
+  padding-bottom: 1px;
+  margin-top: 50px;
+}
+
+.subtitle {
+  color: #F0F7FF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.divider {
+  height: 20px;
+}
+
+
+/**** Parallax effect ****/
 .bgContain {
   height: 450px;
   padding-top: 50px;
@@ -38,23 +61,57 @@ a:hover {
   background-size: cover;
 }
 
-h1 {
-  color: #dfe5ec;
-  font-family: 'Megrim', cursive;
-  font-size: 5em;
+
+/**** Nav ****/
+.navbar {
+  background: rgba(240, 247, 255, 0.7);
+  color: #F0F7FF;
+  position: fixed;
+  width: 100%;
 }
 
-.mainTitleDiv {
-  background-color: rgba(223, 229, 236, 0.2);
+.navbar-header {
+  float: none;
+  /*padding-left: 20px;*/
 }
 
-.subtitle {
-  color: #dfe5ec;
-  font-family: 'Open Sans', sans-serif;
+.navbar-toggle {
+  display: block;
 }
 
-.divider {
-  height: 20px;
+.hamburger {
+  background-color: #F0F7FF;
+}
+
+.navbar .navbar-toggle .icon-bar {
+  background-color: #400061;
+}
+
+.navbar-collapse.collapse {
+  display: none!important;
+}
+
+.navbar-nav {
+  float: none!important;
+}
+
+.navbar-nav>li {
+  float: none;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #005A49!important;
+}
+
+.collapse.in{
+  display:block !important;
+}
+
+.navLogo {
+  max-height: 1.5em;
+  padding-bottom: 5px;
 }
 
 
@@ -69,13 +126,11 @@ h3 {
   margin-bottom: 20px;
 }
 
-.thumbnail {
-  overflow: hidden;
-  width: 100%;
-  height: 200px;
+.contactBtn {
+  margin-top: 30px;
 }
 
-.contactBtn {
+.topText {
   margin-top: 30px;
 }
 
@@ -87,5 +142,12 @@ footer {
   z-index: -1;
   padding-top: 10px;
   margin-top: 200px;
-  background-color: #dfe5ec;
+  background-color: #F0F7FF;
+}
+
+
+/**** Page-specific: projects ****/
+.limitHeight {
+  height: 350px;
+  align-items: center;
 }

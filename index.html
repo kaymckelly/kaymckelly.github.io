@@ -17,16 +17,43 @@
   </head>
 
   <body>
-    <div class="bg1 bgContain text-center">
-      <div class="mainTitleDiv">
-        <h1>Kay McKelly</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">
+          <img src="./visual/glasses.png" alt="black outline of eyeglasses" class="navLogo">
+        </a>
+        <button type="button" class="navbar-toggle btn" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-      <p class="lead subtitle">Front-End Developer</p>
+      <nav class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="./projects.html">Projects</a>
+          </li>
+          <!-- TODO: once page is made, add -->
+          <!-- <li>
+            <a href="#">Spare Time</a>
+          </li> -->
+        </ul>
+      </nav>
+    </nav>
+
+    <div class="bg1 bgContain text-center">
+      <header class="mainTitleDiv">
+        <h1>Kay McKelly</h1>
+      </header>
+      <h5 class="subtitle">Front-End Developer</h5>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <article class="col-md-6">
           <h3>About</h3>
           <p class="text-justify">
             I'm a front-end developer with significant back-end experience. I'm trained in the NEAP (Node, Express, Angular, PostgreSQL) stack and have been teaching myself Java and Python in my spare time. My interests include accessibility, mobile-first development, user interface design, security, and privacy.
@@ -37,8 +64,8 @@
           <p class="text-justify">
             My journey to becoming a software developer started in 1998, when I started building websites with Geocities. After that, I taught myself how to edit CSS so I could jazz up my Livejournal layout. Throughout most of high school, I handwrote my notes in HTML. In 2015 I started teaching myself jQuery. Seven months later, I started the web development immersive course at <a href="http://www.galvanize.com/campuses/seattle-pioneer-square/">Galvanize Seattle</a>. After graduating in July, I've been working as a freelance web developer.
           </p>
-        </div>
-        <div class="col-md-5 col-md-offset-1">
+        </article>
+        <aside class="col-md-5 col-md-offset-1">
           <h3>Interested in hiring me?</h3>
           <p class="text-justify">
             Currently on the job market in Seattle, WA. On-site or remote work is welcome. I cannot relocate at this time.
@@ -46,52 +73,100 @@
           <a class="btn btn-lg btn-info center-block" href="./files/KayMcKelly.pdf" role="button">Resum&Eacute;</a>
           <a class="btn btn-lg btn-info center-block middleBtn" href="https://www.linkedin.com/in/kaymckelly" role="button">LinkedIn</a>
           <a class="btn btn-lg btn-info center-block" href="https://github.com/kaymckelly" role="button">Github</a>
-        </div>
+        </aside>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="bg2 bgContain text-center">
-      <div class="mainTitleDiv">
-        <h1>Portfolio</h1>
-      </div>
+      <header class="mainTitleDiv">
+        <h1>Skills</h1>
+      </header>
     </div>
 
     <div class="divider"></div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h3>Boost</h3>
-          <a href="./visual/boostScreenshot1.png" class="thumbnail">
-            <img src="./visual/boostScreenshot1.png" alt="Boost screenshot of home page with happy toast icon and menus">
-          </a>
-          <p class="text-justify">
-            I built this Capstone project in two weeks. With Angular 1 on the front-end, an Express server and PostgreSQL database on the back-end, this app connects strangers to help each other out. Boost also teaches good self-care techniques. It includes a meditation timer, inspirational quotes, and a self-care checklist.
+        <aside class="col-sm-3">
+          <h3>Level 1</h3>
+        </aside>
+        <section class="col-sm-9">
+          <p>
+            Advanced Beginner: begins to create and identify conditional rules; rules have nuance
           </p>
-          <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/boost" role="button">See the code on Github</a>
-        </div>
-        <div class="col-md-4">
-          <h3>SNC</h3>
-          <a href="./visual/sncScreenshot1.png" class="thumbnail">
-            <img src="./visual/sncScreenshot1.png" alt="SNC screenshot of main view with map" />
-          </a>
-          <p class="text-justify">
-            A group project built in a week, Seattle Neighborhood Challenge is a React Native app with an Express server. We chose React Native so SNC could function as a native app on both ios and android. I acted as project manager, in addition to contributing to the codebase. We used the Google Maps API, oAuth with Facebook login, Knex query builder, and an Agile workflow.
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </section>
+      </div>
+      <hr />
+      <div class="row">
+        <aside class="col-sm-3">
+          <h3>Level 2</h3>
+        </aside>
+        <section class="col-sm-9">
+          <p>
+            Competence: can start using advice in context; learns organizing principles; higher order rules shape contexts and conditions
           </p>
-          <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/snc" role="button">See the code on Github</a>
-        </div>
-        <div class="col-md-4">
-          <h3>Brows on Fleek</h3>
-          <a href="/visual/browsScreenshot1.png" class="thumbnail">
-            <img src="./visual/browsScreenshot1.png" alt="Brows on Fleek app screenshot 1">
-          </a>
-          <p class="text-justify">
-            Brows on Fleek was the first project I completed while at Galvanize. Designed to help people to find places to get their eyebrows done within a given radius, this project was focused on front-end development and using APIs. It's a front-end project that utilizes Twitter Bootstrap, HTML5, CSS3, and the Google Maps API.
+          <ul>
+            <li>Test-driven development</li>
+            <li>Security and privacy</li>
+            <li>oAuth</li>
+            <li>Cross-platform mobile development (e.g. React Native)</li>
+          </ul>
+        </section>
+      </div>
+      <hr />
+      <div class="row">
+        <aside class="col-sm-3">
+          <h3>Level 3</h3>
+        </aside>
+        <section class="col-sm-9">
+          <p>
+            Proficiency: no longer struggles with basic rules; uses pattern recognition to assess what to do and uses rules to determine how to do it; intuition aides in identifying the situation
           </p>
-          <a class="btn btn-info btn-block" href="https://github.com/kaymckelly/brows-on-fleek" role="button">See the code on Github</a>
-        </div>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>SQL</li>
+            <li>Knex.js</li>
+            <li>React Native</li>
+            <li>Flexbox</li>
+            <li>Pug (formerly Jade)</li>
+            <li>jQuery</li>
+            <li>Chrome developer tools</li>
+            <li>UX/UI</li>
+            <li>Git/Github</li>
+            <li>Accessibility (as set forth by <a href="http://webaim.org/">WebAIM</a>)</li>
+            <li>Photoshop</li>
+          </ul>
+        </section>
+      </div>
+      <hr />
+      <div class="row">
+        <aside class="col-sm-3">
+          <h3>Level 4</h3>
+        </aside>
+        <section class="col-sm-9">
+          <p>
+            Expertise: sees big picture; just "does what works"; transcends reliance on rules/guidelines/maxims; intuitive grasp of situations based on deep understanding; has a vision of what is possible
+          </p>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Semantic HTML</li>
+            <li>Angular.js</li>
+            <li>JavaScript</li>
+            <li>GIMP (GNU Image Manipulation Program)</li>
+            <li>Pair programming</li>
+            <li>Agile workflow</li>
+          </ul>
+        </section>
       </div>
     </div>
 
@@ -100,7 +175,7 @@
     <div class="bg3 bgContain text-center">
       <h1 class="mainTitleDiv">Contact</h1>
 
-      <a href="mailto:geekscatv2@gmail.com" class="btn btn-lg btn-info contactBtn" role="button">Email Me</a>
+      <a href="mailto:kayasmckelly@gmail.com" class="btn btn-lg btn-info contactBtn" role="button">Email Me</a>
 
       <footer>
         <div class="container text-center">
@@ -117,6 +192,5 @@
 
     <!-- scripts: personal -->
     <script src="./scripts/main.js" type="text/javascript"></script>
-
   </body>
 </html>
