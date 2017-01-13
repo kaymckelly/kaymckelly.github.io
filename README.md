@@ -8,5 +8,6 @@ Continuing with the theme of the suggested name (silliness), branches for this p
 - electricNopeRope (electric eel)
 - stabRabbit (porcupine)
 - landCloud (sheep)
+- majesticSeaFlapFlap (manta ray)
 
 This site is a demo of my design/dev skills. HTML5, CSS3, Twitter Bootstrap. Available at geekscat.com or kaymckelly.com
