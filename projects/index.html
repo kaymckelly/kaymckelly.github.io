@@ -107,18 +107,24 @@
       <hr />
       <div class="row">
         <header class="col-md-12">
-          <h3>Conference Program Creator</h3>
+          <h3>Conference Program Editor</h3>
         </header>
       </div>
       <div class="row">
         <section class="col-md-12">
           <p class="text-justify">
-            Still in the wireframe/preliminary build stages, this is another piece of my work with IACR that I'm pretty excited about. They requested a tool to make conference program creation easier. They did not want to use existing tools, as they already have several robust databases. As a result, they requested I build what will be an internal tool linked to the relevant internal databases.
+            As I worked on the IACR conference site and got to know the organization better, I recognized a major problem that needed a fix: there was no standardization in the way conference programs were built. This meant that the chairs in charge of putting together the program for each conference had to build them from scratch each year. There was no easy way of organizing talks or sessions. It seemed like it was a huge pain, and that there had to be an easier way.
           </p>
           <p class="text-justify">
-            At present, I am researching the optimal way to build this tool using jQuery. I have submitted a proposal, which was approved at IACR's last board meeting, and have now begun building based on the wireframes I submitted.
+            As a result, I proposed that I build a conference program editor for them. Using input from websubrev to generate a list of papers and a template based on the structure of previous conferences, the conference program editor gives IACR members a drag and drop GUI with which to build their conference programs.
           </p>
-          <a class="btn btn-info disabled" href="https://github.com/kaymckelly/freelance-iacr" role="button">Code coming soon!</a>
+          <p class="text-justify">
+            I built wireframes and submitted the project for approval in April 2017, had it approved by May, and have been hard at work on it since June. It's nearing completion for the MVP, with several features planned for future releases. While this is planned to be an internal tool for IACR, I've got <a href="http://geekscat.com/program-editor/">a working demo</a> that closely resembles the finished product.
+          </p>
+          <p class="text-justify">
+            Built with Bootstrap 3 for styling, further CSS customization by yours truly, and PHP to interact with the MySQL database, I had the opportunity to learn a lot while building this project. Learning PHP was probably my biggest challenge, but it was also really rewarding to build something so complex.
+          </p>
+          <a class="btn btn-info" href="https://github.com/kaymckelly/program-editor" role="button">See the code on Github</a>
         </section>
       </div>
       <hr />
