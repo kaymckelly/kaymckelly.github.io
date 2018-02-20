@@ -54,12 +54,8 @@
       <div class="row">
         <article class="col-md-12">
           <h3>Introduction</h3>
-          <!-- TODO: rewrite? add to? -->
           <p class="text-justify">
-            This is a visual showcase of some of my projects. Whether it's design or topic (or, more often, both), I really enjoyed building these projects. I strongly believe that you should love what you do, so when I take on a project, it's going to be something I enjoy. There's always more work to do, so I almost never refer to my apps as "finished". The majority of my code is up on <a href="https://github.com/kaymckelly">Github</a> (some is private per client's request).
-          </p>
-          <p class="text-justify">
-            I strive to adhere to web accessibility standards, as set forth by the <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a>. Gray-on-gray low-contrast text is in fashion right now and while aesthetically it can look nice, I'm more invested in making apps that are truly accessible for <strong>all</strong> users.
+            This is a visual showcase of some of the work I've done. Most of my code is up on <a href="https://github.com/kaymckelly">Github</a> (some is in private repos per client request). I strive to adhere to web accessibility standards, as set forth by the <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a>. Gray-on-gray low-contrast text is in fashion right now and while aesthetically it can look nice, I'm more invested in making apps that are truly accessible for <strong>all</strong> users.
           </p>
         </article>
       </div>
@@ -96,23 +92,18 @@
       </div>
       <div class="row">
         <section class="col-md-12">
-          <!-- TODO: rewrite this piece as it's now up and running -->
-          <!-- <p>
-            deployed here: https://www.iacr.org/tools/program/
-          </p> -->
           <p class="text-justify">
             After working for the <a href="http://iacr.org/">International Association for Cryptologic Research (IACR)</a> for several months, I noticed how complicated the process for constructing conference schedules was. I pitched the idea of building a conference program creator to streamline the process for conference organizers.
           </p>
-          <!-- TODO: moar description of this project! -->
-          <p>
-              palette here: http://www.colourlovers.com/palette/4500426/teal_we_meet_again
-          </p>
-          <!-- <p class="text-justify">
-            Still in the wireframe/preliminary build stages, this is another piece of my work with IACR that I'm pretty excited about. They requested a tool to make conference program creation easier. They did not want to use existing tools, as they already have several robust databases. As a result, they requested I build what will be an internal tool linked to the relevant internal databases.
+          <p class="text-justify">
+            I created <a href="http://www.colourlovers.com/palette/4500426/teal_we_meet_again">the color palette</a> for this project, then began to code. I knew the tool needed to connect to several internal databases and I wanted to work with a language I already knew. I found the excellent <a href="https://github.com/bevacqua/dragula">Dragula framework</a>, which made the drag-and-drop interface I'd envisioned for this project possible.
           </p>
           <p class="text-justify">
-            At present, I am researching the optimal way to build this tool using jQuery. I have submitted a proposal, which was approved at IACR's last board meeting, and have now begun building based on the wireframes I submitted.
-          </p> -->
+            The user submits a list of accepted papers in JSON format (in IACR's case, this list is derived from websubrev) and the dates for the conference. Users can save and return to edit a schedule later, or start from a basic template. Program Creator then displays the schedule for the given dates, along with the list of papers at left. The user can drag and drop papers into time slots. There are pop-up warnings that appear when there are too many papers in a time slot. Users can also add additional papers, time slots, or days to the schedule. The output is either a JSON file of the schedule for use in the program template I built or an HTML version of the schedule.
+          </p>
+          <p class="text-justify">
+            Other technologies used include Bootstrap 3, jQuery, the <a href="https://github.com/longbill/jquery-date-range-picker">jQuery date range picker plugin</a>, <a href="https://github.com/jonthornton/jquery-timepicker">time picker plugin</a>, and the JavaScript plugin <a href="https://github.com/jonthornton/Datepair.js">datepair</a>. In addition to building the tool, I also wrote docs and instructions on how to use it. Because it's in active use where it's currently deployed, I'm not providing a link. You can check out the code on Github, or email me to talk more about the current version.
+          </p>
           <a class="btn btn-info" href="https://github.com/kaymckelly/program-editor" role="button">
             See the code on Github
           </a>
@@ -170,26 +161,25 @@
       <div class="row">
         <figure class="col-md-6">
           <a href="../visual/farcaster1.png">
-              <!-- TODO: add alt text -->
-            <img src="../visual/farcaster1.png" alt="description" class="img-responsive thumbnail">
+            <img src="../visual/farcaster1.png" alt="Farcaster Films website, which features a large photo of a camera on a desert road and a dark menu with pale text across the top" class="img-responsive thumbnail">
           </a>
         </figure>
         <figure class="col-md-6">
           <a href="../visual/farcaster2.png">
-              <!-- TODO: add alt text -->
-            <img src="../visual/farcaster2.png" alt="description" class="img-responsive thumbnail">
+            <img src="../visual/farcaster2.png" alt="website for Farcaster Consulting Group, which features a menu across the top and a photograph of a solar eclipse" class="img-responsive thumbnail">
           </a>
         </figure>
       </div>
       <div class="row">
         <section class="col-md-12">
           <p class="text-justify">
-            oh look, screenshots! not much to say other than color palettes (http://www.colourlovers.com/palette/4488989/Farcaster:_Final?sAC=1) and initial specs
+            Farcaster Consulting Group commissioned me for three websites. One for the film company, <a href="http://farcasterfilms.com/">Farcaster Films</a>, which has co-produced two films; one for <a href="http://www.farcaster.com/">Farcaster Consulting Group</a>, which offers cryptography and computer security services; and a personal webpage. The third is still in progress, but the first two have been deployed at the links above. I developed a <a href="http://www.colourlovers.com/palette/4488989/Farcaster:_Final">custom color palette</a> and was then given full rein to create minimalist, easy-to-edit designs.
           </p>
         </section>
       </div>
-      <hr />
 
+      <!-- <hr /> -->
+      <!-- TODO: add other projects as they come
       <div class="row">
         <header class="col-md-12">
           <h3>Cool Thing&trade;</h3>
@@ -205,7 +195,7 @@
             Code coming soon!
           </a>
         </section>
-      </div>
+      </div> -->
     </div>
 
     <div class="divider"></div>
