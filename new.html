@@ -6,23 +6,22 @@
 
     <title>Kay McKelly</title>
 
-    <!-- Styles: general -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- styles: general -->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-dGOMD5bzPwVfOGp4zGQiudlmCab9PN0dIsv1r1MCotfVsSXM3m5ZiqEVO56XzCCh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Megrim|Open+Sans" rel="stylesheet">
 
-    <!-- Styles: personal -->
+    <!-- styles: personal -->
     <link href="./styles/test.css" rel="stylesheet">
   </head>
 
   <body class="container">
     <header class="row" id="header">
-      <article class="col-sm-9" id="headerCol">
+      <article class="col-sm-9 col-6" id="headerCol">
         <h1 class="align-text-bottom">
           Kay McKelly
         </h1>
       </article>
-      <aside class="col-sm-3">
+      <aside class="col-sm-3 col-6">
         <a class="btn btn-outline-warning btn-block headerBtn" href="./files/KayMcKelly.pdf" role="button">Resum&eacute;</a>
         <br />
         <a class="btn btn-outline-warning btn-block headerBtn" href="https://www.linkedin.com/in/kaymckelly" role="button">LinkedIn</a>
@@ -32,9 +31,22 @@
     </header>
 
     <main>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <div class="row">
+        <section class="col-sm-8 col-12">
+          <h3>
+            About
+          </h3>
+          <p class="text-justify">
+            Hi, I'm Kay and I'm a software developer in Seattle. I've worked with a lot of different technologies including the NEAP stack (Node, Express, Angular, PostgreSQL), .NET framework (specifically ASP.NET Core 2.0), HTML/CSS/JavaScript/jQuery, and Python (with and without the Django framework). I like to learn about new technologies and best practices for them, then put them to the test.
+          </p>
+          <p class="text-justify">
+            My interests include accessibility, mobile-first development, user interface design, security, and privacy. I've also been teaching myself Java and would love to do more with it. For now, I'm most familiar with JavaScript, C#, and Python.
+          </p>
+        </section>
+        <figure class="col-sm-4">
+          headshot probably
+        </figure>
+      </div>
     </main>
 
     <!-- scripts: bootstrap -->
