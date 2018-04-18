@@ -16,8 +16,8 @@ h1 {
   font-size: 4.6em;
 }
 
-.headerBtn {
-  margin-bottom: 10px;
+#bottomHeaderBtn {
+  margin-bottom: 15px;
 }
 
 #header {

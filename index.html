@@ -2,138 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Kay McKelly</title>
 
-    <!-- Styles: general -->
-    <!-- NOTE: last stable release before moving into v4.x -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet">
+    <!-- styles: general -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-dGOMD5bzPwVfOGp4zGQiudlmCab9PN0dIsv1r1MCotfVsSXM3m5ZiqEVO56XzCCh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Megrim|Open+Sans" rel="stylesheet">
 
-    <!-- Styles: personal -->
-    <link href="./styles/main.css" rel="stylesheet">
+    <!-- styles: personal -->
+    <link href="./styles/test.css" rel="stylesheet">
   </head>
 
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-header">
-        <a href="/" class="navbar-brand">
-          <img src="./visual/glasses.png" alt="black outline of eyeglasses" class="navLogo">
-        </a>
-        <button type="button" class="navbar-toggle btn" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <nav class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="./projects">Projects</a>
-          </li>
-          <li>
-            <a href="./spare-time">Spare Time</a>
-          </li>
-        </ul>
-      </nav>
-    </nav>
+  <body class="container">
+    <!-- TODO: navbar -->
 
-    <div class="bg1 bgContain text-center">
-      <header class="mainTitleDiv">
-        <h1>Kay McKelly</h1>
-      </header>
-      <h5 class="subtitle">Software Developer</h5>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <article class="col-md-6">
-          <h3>About</h3>
-          <p class="text-justify">
-              Hi, I'm Kay and I'm a full-stack developer in Seattle. I've worked with a wide vaiety of technologies including the NEAP stack (Node, Express, Angular, PostgreSQL), .NET framework (specifically ASP.NET Core 2.0), HTML/CSS/jQuery, and Python (with and without the Django framework). I've worked with a pretty wide variety of technologies and feel confident learning new ones.
-          </p>
-          <p class="text-justify">
-              My interests include accessibility, mobile-first development, user interface design, security, and privacy. I've also been teaching myself Java and would love to do more with it. For now, I'm most familiar with JavaScript, C#, and Python.
-          </p>
-        </article>
-        <aside class="col-md-5 col-md-offset-1">
-          <h3>Interested in hiring me?</h3>
-          <p class="text-justify">
-            Currently on the job market in Seattle, WA. On-site or remote work is welcome. I work best in a team-focused, collaborative environment.
-          </p>
-          <a class="btn btn-lg btn-info center-block" href="./files/KayMcKelly.pdf" role="button">Resum&Eacute;</a>
-          <a class="btn btn-lg btn-info center-block middleBtn" href="https://www.linkedin.com/in/kaymckelly" role="button">LinkedIn</a>
-          <a class="btn btn-lg btn-info center-block" href="https://github.com/kaymckelly" role="button">Github</a>
-        </aside>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="bg2 bgContain text-center">
-      <header class="mainTitleDiv">
+    <header class="row" id="header">
+      <article class="col-sm-9 col-9" id="headerCol">
         <h1>
-            How I Got Here
+          Kay McKelly
         </h1>
-      </header>
-    </div>
+      </article>
+      <aside class="col-sm-3 col-12">
+        <!-- TODO: buttons should change color on hover, poss. add additional animation -->
+        <a class="btn btn-warning btn-block" href="./files/KayMcKelly.pdf" role="button">Resum&eacute;</a>
+        <br />
+        <a class="btn btn-warning btn-block" href="https://www.linkedin.com/in/kaymckelly" role="button">LinkedIn</a>
+        <br />
+        <a id="bottomHeaderBtn" class="btn btn-warning btn-block" href="https://github.com/kaymckelly" role="button">Github</a>
+      </aside>
+    </header>
 
-    <div class="divider"></div>
-
-    <div class="container">
+    <main>
       <div class="row">
-        <section class="col-md-12">
+        <header class="col-12">
+          <h2>
+            About
+          </h2>
+        </header>
+      </div>
+      <div class="row">
+        <section class="col-sm-8 col-12">
           <p class="text-justify">
-            I've been a bonafide geek since 1998, when I started building websites on Geocities, later editing CSS for my Livejournal layouts and writing my class notes in HTML. Growing up in Silicon Valley, with a father who worked in tech, likely influenced this. I was also fascinated by the communication possibilities and security pitfalls that came with the advent of an Internet-connected world.
+            Hi, I'm Kay and I'm a software developer in Seattle. I've worked with a lot of different technologies including the NEAP stack (Node, Express, Angular, PostgreSQL), .NET framework (specifically ASP.NET Core 2.0), HTML/CSS/JavaScript/jQuery, and Python (with and without the Django framework). I like to learn about new technologies and best practices for them, then put them to the test.
           </p>
           <p class="text-justify">
-              When I went to college, I didn't yet realize how well suited I was for a career in tech. After spending my first year as a pre-med major, I switched to sociology. In this, I excelled. I maintained a high GPA in all sociology classes and was encouraged to go on to graduate school. I applied for and attended a PhD program in sociology at the University of Massachusetts Amherst.
-          </p>
-          <p class="text-justify">
-              What had not been clear to me when I started college was becoming clearer by the day: I wanted to spend the majority of my time actively building things and solving problems, not theorizing. I loved teaching while in graduate school, but that was not enough to keep me there. I earned my master's degree, writing a 60 page <a href="https://scholarworks.umass.edu/masters_theses_2/103/">thesis</a>. During my time at UMass I also co-published <a href="http://www.socwomen.org/wp-content/uploads/swsfactsheet_intersectionality.pdf">a piece on intersectionality in sociological journals</a>.
-          </p>
-          <p class="text-justify">
-              After leaving graduate school, I trained as a home-birth midwife with the <a href="http://massmidwives.org/">Massachusetts Midwives Alliance</a>. I also worked with the Prison Birth Project to provide doula services to pregnant parents who are incarcerated. Midwifery and doula work is how I volunteer. Eventually I hope to offer services as a pro-bono midwife and doula to families who would not otherwise be able to afford it.
-          </p>
-          <p class="text-justify">
-            In 2015 I decided I wanted to try software engineering, so I taught myself jQuery. Seven months later, I moved from western Massachusetts to start at Galvanize Seattle and have never looked back. Galvanize offered a 6 month program, which I preferred to the usual 3 month program.
-          </p>
-          <p class="text-justify">
-            After graduating from Galvanize in July 2016, I've been working as a freelance web developer for the International Association for Cryptologic Research (IACR) and Farcaster Consulting Group. IACR first hired me to create a reusable website template for scientific conferences. In the process of building that, I noticed that their process for putting together a conference schedule was unwieldy; I pitched an idea for a conference program creator tool. Check out my <a href="./projects">projects</a> page for more on these and other things I've built.
-          </p>
-          <p class="text-justify">
-              When I'm not freelancing, I'm attending a variety of tech meetups and guest-speaking or teaching workshops. In April 2017, I volunteered to teach an <a href="https://www.meetup.com/She-Codes-Now-Seattle/events/237154203/">Introduction to Angular class</a> with <a href="https://www.meetup.com/She-Codes-Now-Seattle/">She Codes Now</a>. I'd like to teach more classes in the future on a lot of topics, but for now I'm focused on freelancing and looking for a more permanent position where I can work on a team.
+            My interests include accessibility, mobile-first development, user interface design, security, and privacy. I've also been teaching myself Java and would love to do more with it. For now, I'm most familiar with JavaScript, C#, and Python.
           </p>
         </section>
+        <figure class="col-sm-4 figure">
+          <img src="./visual/headshot.JPG" class="img-fluid img-thumbnail" />
+        </figure>
       </div>
-    </div>
 
-    <div class="divider"></div>
+      <div class="row">
+        <header class="col-12">
+          <h2>
+            Recent Projects
+          </h2>
+        </header>
+      </div>
 
-    <div class="bg3 bgContain text-center">
-      <h1 class="mainTitleDiv">Contact</h1>
+      <div class="row">
+        <figure class="card col-sm-6 col-12 border-0">
+          <img src="./visual/programcreator12.png" class="card-img-top" alt="screenshot of conference program creator" />
+          <div class="card-body">
+            <h4 class="card-title">
+              Conference Program Creator
+            </h4>
+            <p class="card-text">
+              stuff and things and stuff and seymour butts
+            </p>
+            <a href="/" class="btn btn-warning">More info and demo</a>
+          </div>
+        </figure>
+        <figure class="card col-sm-6 col-12 border-0">
+          <img src="./visual/conferencetemplate1.png" class="card-img-top" alt="screenshot of reusable conference template" />
+          <div class="card-body">
+            <h4 class="card-title">
+              Reusable Conference Template
+            </h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="/" class="btn btn-warning">More info</a>
+          </div>
+        </figure>
 
-      <a href="mailto:kayasmckelly@gmail.com" class="btn btn-lg btn-info contactBtn" role="button">Email Me</a>
-
-      <footer>
-        <div class="container text-center">
-          <p class="small">
-            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-          </p>
-        </div>
-      </footer>
-    </div>
+        <!-- NOTE: switching to cards, might delete later -->
+        <!-- <figure class="figure col-sm-6 col-12">
+          <img src="./visual/programcreator12.png" class="figure-img img-fluid img-thumbnail" alt="screenshot of conference program creator" />
+          <h4>
+            Conference Program Creator
+          </h4>
+          <figcaption class="figure-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </figcaption>
+          <a href="/" class="btn btn-warning">More info</a>
+        </figure>
+        <figure class="figure col-sm-6 col-12">
+          <img src="./visual/conferencetemplate1.png" class="figure-img img-fluid img-thumbnail" alt="screenshot of reusable conference template" />
+          <h4>
+            Reusable Conference Template
+          </h4>
+          <figcaption class="figure-caption text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </figcaption>
+          <a href="/" class="btn btn-warning">More info</a>
+        </figure> -->
+      </div>
+    </main>
 
     <!-- scripts: bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
     <!-- scripts: personal -->
-    <script src="./scripts/main.js" type="text/javascript"></script>
+    <!-- <script src="./scripts/main.js" type="text/javascript"></script> -->
   </body>
 </html>
