@@ -5,7 +5,28 @@ body {
   font-size: 1em;
 }
 
+/* TODO: put media breakpoint for xs screens; this breaks on iphone 5 simulator */
+#headerCol {
+  position: relative;
+}
+
+/* TODO: put media breakpoint for xs screens; this breaks on iphone 5 simulator */
+#headerCol > h1 {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+}
+
 h1 {
   font-family: 'Megrim', cursive;
-  font-size: 4em;
+  font-size: 5em;
+  /* padding-top: 20px; */
+}
+
+.headerBtn {
+  margin-bottom: 10px;
+}
+
+#header {
+  padding-top: 20px;
 }
