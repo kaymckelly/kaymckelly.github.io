@@ -1,3 +1,5 @@
+/* Color theme created by Kay McKelly: https://coolors.co/005a49-004c7f-f0f7ff-04001e-400061 */
+
 /**** General ****/
 body {
   color: #04001E;
@@ -6,9 +8,11 @@ body {
   background-color: rgba(240, 247, 255, 0.2)
 }
 
+/* TODO: this needs a solid background color on mobile; set media breakpoint */
+/* TODO part deux: get rid of outline on hamburger when pressed */
 nav {
-  /* TODO: need a better way to just get rid of the border  */
   border-color: rgba(240, 247, 255, 0.6);
+  height: 4em;
 }
 
 a.nav-link {
