@@ -3,6 +3,21 @@ body {
   color: #04001E;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  background-color: rgba(240, 247, 255, 0.2)
+}
+
+nav {
+  /* TODO: need a better way to just get rid of the border  */
+  border-color: rgba(240, 247, 255, 0.6);
+}
+
+a.nav-link {
+  color: #400061 !important;
+}
+
+span.icon {
+  font-size: 1.7em;
+  color: #400061;
 }
 
 #headerCol {
@@ -11,15 +26,17 @@ body {
   align-items: center;
 }
 
+#header {
+  padding-top: 15px;
+}
+
 h1 {
   font-family: 'Megrim', cursive;
   font-size: 4.6em;
+  color: #400061;
 }
 
-#bottomHeaderBtn {
-  margin-bottom: 15px;
-}
-
-#header {
-  padding-top: 15px;
+figcaption > a.btn {
+  background-color: #400061;
+  color: #F0F7FF;
 }
