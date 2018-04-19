@@ -15,7 +15,38 @@
   </head>
 
   <body class="container">
-    <!-- TODO: navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="/">
+        <img src="./visual/glasses.png" width="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseMe" aria-controls="collapseMe" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapseMe">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Conference Program Creator</a>
+              <a class="dropdown-item" href="#">Reusable Conference Template</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">
+              Projects
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
 
     <header class="row" id="header">
       <article class="col-sm-9 col-9" id="headerCol">
@@ -25,11 +56,12 @@
       </article>
       <aside class="col-sm-3 col-12">
         <!-- TODO: buttons should change color on hover, poss. add additional animation -->
-        <a class="btn btn-warning btn-block" href="./files/KayMcKelly.pdf" role="button">Resum&eacute;</a>
+        <!-- TODO part II: or switch to icons for linkedin and github, then move resume up to the menu after projects -->
+        <!-- <a class="btn btn-warning btn-block" href="./files/KayMcKelly.pdf" role="button">Resum&eacute;</a>
         <br />
         <a class="btn btn-warning btn-block" href="https://www.linkedin.com/in/kaymckelly" role="button">LinkedIn</a>
         <br />
-        <a id="bottomHeaderBtn" class="btn btn-warning btn-block" href="https://github.com/kaymckelly" role="button">Github</a>
+        <a id="bottomHeaderBtn" class="btn btn-warning btn-block" href="https://github.com/kaymckelly" role="button">Github</a> -->
       </aside>
     </header>
 
@@ -43,10 +75,10 @@
       </div>
       <div class="row">
         <section class="col-sm-8 col-12">
-          <p class="text-justify">
+          <p>
             Hi, I'm Kay and I'm a software developer in Seattle. I've worked with a lot of different technologies including the NEAP stack (Node, Express, Angular, PostgreSQL), .NET framework (specifically ASP.NET Core 2.0), HTML/CSS/JavaScript/jQuery, and Python (with and without the Django framework). I like to learn about new technologies and best practices for them, then put them to the test.
           </p>
-          <p class="text-justify">
+          <p>
             My interests include accessibility, mobile-first development, user interface design, security, and privacy. I've also been teaching myself Java and would love to do more with it. For now, I'm most familiar with JavaScript, C#, and Python.
           </p>
         </section>
@@ -66,50 +98,28 @@
       <div class="row">
         <figure class="card col-sm-6 col-12 border-0">
           <img src="./visual/programcreator12.png" class="card-img-top" alt="screenshot of conference program creator" />
-          <div class="card-body">
+          <figcaption class="card-body">
             <h4 class="card-title">
               Conference Program Creator
             </h4>
             <p class="card-text">
-              stuff and things and stuff and seymour butts
+              A drag and drop tool to construct a multi-day multi-track conference program. This tool produces a JSON file that is used by the conference template.
             </p>
             <a href="/" class="btn btn-warning">More info and demo</a>
-          </div>
+          </figcaption>
         </figure>
         <figure class="card col-sm-6 col-12 border-0">
           <img src="./visual/conferencetemplate1.png" class="card-img-top" alt="screenshot of reusable conference template" />
-          <div class="card-body">
+          <figcaption class="card-body">
             <h4 class="card-title">
               Reusable Conference Template
             </h4>
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Created for conferences that need a website, with a call for papers page, program, travel information, etc. The conference chairman simply clones the github repository and follows the instructions to customize their site.
             </p>
             <a href="/" class="btn btn-warning">More info</a>
-          </div>
-        </figure>
-
-        <!-- NOTE: switching to cards, might delete later -->
-        <!-- <figure class="figure col-sm-6 col-12">
-          <img src="./visual/programcreator12.png" class="figure-img img-fluid img-thumbnail" alt="screenshot of conference program creator" />
-          <h4>
-            Conference Program Creator
-          </h4>
-          <figcaption class="figure-caption">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </figcaption>
-          <a href="/" class="btn btn-warning">More info</a>
         </figure>
-        <figure class="figure col-sm-6 col-12">
-          <img src="./visual/conferencetemplate1.png" class="figure-img img-fluid img-thumbnail" alt="screenshot of reusable conference template" />
-          <h4>
-            Reusable Conference Template
-          </h4>
-          <figcaption class="figure-caption text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </figcaption>
-          <a href="/" class="btn btn-warning">More info</a>
-        </figure> -->
       </div>
     </main>
 
