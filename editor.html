@@ -18,7 +18,6 @@
   </head>
 
   <body class="container">
-    <!-- TODO: decrease height (width great) -->
     <nav class="navbar navbar-expand-sm navbar-light">
       <a class="navbar-brand" href="/">
         <img src="./visual/glasses.png" width="50" />
@@ -29,12 +28,12 @@
 
       <div class="collapse navbar-collapse" id="collapseMe">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/">
               Home <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Projects
             </a>
@@ -59,69 +58,63 @@
       </div>
     </nav>
 
-    <header class="row" id="header">
+    <!-- <header class="row" id="header">
       <article class="col-12" id="headerCol">
         <h1>
-          Kay McKelly
+          Conference Program Editor
         </h1>
       </article>
-    </header>
+    </header> -->
 
     <main>
       <div class="row">
         <header class="col-12">
           <h2>
-            About
+            Conference Program Editor
           </h2>
         </header>
       </div>
       <div class="row">
-        <section class="col-sm-8 col-12">
+        <section class="col-12">
           <p>
-            Hi, I'm Kay and I'm a software developer in Seattle. I've worked with a lot of different technologies including the NEAP stack (Node, Express, Angular, PostgreSQL), .NET framework (specifically ASP.NET Core 2.0), HTML/CSS/JavaScript/jQuery, and Python (with and without the Django framework). I like to learn about new technologies and best practices for them, then put them to the test.
+            The most complicated part about a conference website is the program, which needs to support multiple tracks and hierarchical organization of sessions. In the past, conference chairs would often resort to creating index cards for each talk, and arranging them on a table to group things together (I am not making this up - it actually happened!). The natural evolution of this is a drag-and-drop user interface that allows the conference program chair to arrange the talks visually, so that's what I set about building.
           </p>
           <p>
-            My interests include accessibility, mobile-first development, user interface design, security, and privacy. I've also been teaching myself Java and would love to do more with it. For now, I'm most familiar with JavaScript, C#, and Python.
+            The conference chair starts from a list of accepted papers in JSON format (which for IACR, is derived from <a href="https://shaih.github.io/websubrev/">websubrev</a>). The answer a few simple questions and start filling in the extra information about session chairs, times, breaks, etc. Users can save and return to edit a schedule later, or start from a basic template.
+          </p>
+          <p>
+            This was built with Bootstrap 3,
+            jQuery, <a href="https://github.com/bevacqua/dragula">dragula</a>, the jQuery date range picker plugin, time picker plugin, and the JavaScript plugin datepair. This is in active use on the IACR site, but a demo is also provided below.
+          </p>
+          <p>
+            <a href="https://github.com/kaymckelly/program-editor" class="btn btn-primary">Github</a>
+            <a href="http://geekscat.com/program-editor/" class="btn btn-primary">Demo</a> (Note that you will need to login with username "guest" and a password consisting of your email address).
+          </p>
+          <p>
+            Here's a screen capture of the drag and drop action for adding a talk to the schedule.
           </p>
         </section>
-        <figure class="col-sm-4">
-          <img src="./visual/cropHeadshot.png" class="img-fluid img-thumbnail" alt="a pale woman in a black t-shirt with a shaved head and glasses smiling with her arms folded" title="thanks for the headshot Todd Bennings!" />
-        </figure>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="editor2.gif" class="img-fluid" />
+        </div>
       </div>
 
-      <div class="row">
-        <header class="col-12">
-          <h2 id="bumpTitle">
-            Recent Projects
-          </h2>
-        </header>
+      <div id="screenshots" class="row">
+        <div class="col">
+          <p>
+            Here are a couple of more screenshots.
+          </p>
+        </div>
       </div>
-
       <div class="row">
-        <figure class="card col-sm-6 col-12 border-0">
-          <img src="./visual/programcreator12.png" class="card-img-top" alt="screenshot of conference program creator" />
-          <figcaption class="card-body">
-            <h4 class="card-title">
-              Conference Program Creator
-            </h4>
-            <p class="card-text">
-              A drag and drop tool to construct a multi-day multi-track conference program. This tool produces a JSON file that is used by the conference template.
-            </p>
-            <a href="/" class="btn btn-sm">More info and demo</a>
-          </figcaption>
-        </figure>
-        <figure class="card col-sm-6 col-12 border-0">
-          <img src="./visual/conferencetemplate1.png" class="card-img-top" alt="screenshot of reusable conference template" />
-          <figcaption class="card-body">
-            <h4 class="card-title">
-              Reusable Conference Template
-            </h4>
-            <p class="card-text">
-              Created for conferences that need a website, with a call for papers page, program, travel information, etc. The conference chairman simply clones the github repository and follows the instructions to customize their site.
-            </p>
-            <a href="/" class="btn btn-sm">More info</a>
-          </figcaption>
-        </figure>
+        <div class="col-sm-6">
+          <a target="_blank" href="http://geekscat.com/visual/programcreator5.png"><img class="img-fluid" src="http://geekscat.com/visual/programcreator5.png"></a>
+        </div>
+        <div class="col-sm-6">
+          <a target="_blank" href="http://geekscat.com/visual/programcreator12.png"><img class="img-fluid" src="http://geekscat.com/visual/programcreator12.png"></a>
+        </div>
       </div>
     </main>
 
