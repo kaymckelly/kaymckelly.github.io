@@ -61,57 +61,78 @@
       <div class="row">
         <header class="col-12">
           <h2>
-            Conference Program Editor
+            Reusable Conference Template
           </h2>
         </header>
       </div>
       <div class="row">
-        <section class="col-12">
+        <section class="col-sm-8">
+          <!-- TODO: edit/read-through -->
           <p>
-            The most complicated part about a conference website is the program, which needs to support multiple tracks and hierarchical organization of sessions. In the past, conference chairs would often resort to creating index cards for each talk, and arranging them on a table to group things together (I am not making this up - it actually happened!). The natural evolution of this is a drag-and-drop user interface that allows the conference program chair to arrange the talks visually, so that's what I set about building.
+            IACR commissioned me to build a mobile-friendly website template for conferences that organizers could easily clone and reuse. IACR was primarily interested in making their conference site mobile-accessible, maintainable, and easy for conference organizers to edit.
           </p>
           <p>
-            The conference chair starts from a list of accepted papers in JSON format (which for IACR is derived from <a href="https://shaih.github.io/websubrev/">websubrev</a>). They answer a few simple questions and start filling in the extra information about session chairs, times, breaks, etc. Users can save and return to edit a schedule later, or start from a basic template.
+            Features include responsive menus and a mobile friendly design using Bootstrap 3.3. Additional touches include display of conference name after scrolling past the header when in mobile view, countdown timers for deadlines, and a conference schedule that is output from the program creator (see above). I created a color palette for the site based on IACR's logo, with shades of orange and green that complement the deep indigo of their logo. I've deployed a demo instance of the template.
           </p>
           <p>
-            This was built with Bootstrap 3,
-            jQuery, <a href="https://github.com/bevacqua/dragula">dragula</a>, the jQuery date range picker plugin, time picker plugin, and the JavaScript plugin datepair. This is in active use on the IACR site, but a demo is also provided below.
-          </p>
-          <p>
-            <!-- TODO: move somewhere else -->
-            <a href="https://github.com/kaymckelly/program-editor" class="btn btn-primary">Github</a>
-            <!-- TODO: move to own section (alert?) -->
-            <a href="http://geekscat.com/program-editor/" class="btn btn-primary">Demo</a> (Note that you will need to login with username "guest" and a password consisting of your email address).
-          </p>
-          <!-- TODO: better formatting for screen captures and images -->
-          <p>
-            Here's a screen capture of the drag and drop action for adding a talk to the schedule.
+            I also wrote documentation to help conference organizers with editing of the template and installation on the IACR servers. The template has since been used by several conference organizers. One of these instances is Asiacrypt 2017. Feedback from organizers is welcomed and encouraged, to improve the template for future users.
           </p>
         </section>
-      </div>
-      <!-- TODO: formatting -->
-      <div class="row">
-        <div class="col">
-          <img src="editor2.gif" class="img-fluid" />
+        <!-- TODO: styling and tags -->
+        <div class="col-sm-4">
+          <p>
+            Some conferences using this (different stages of progress)
+            <ul>
+              <li>
+                <a href="https://eurocrypt.iacr.org/2018">
+                  Eurocrypt 2018
+                </a>
+              </li>
+              <li>
+                <a href="https://pkc.iacr.org/2018">
+                  Public Key Cryptography 2018
+                </a>
+              </li>
+              <li>
+                <a href="https://fse.iacr.org/2018">
+                  Fast Software Encryption 2018
+                </a>
+              </li>
+              <li>
+                <a href="https://tcc.iacr.org/2018">
+                  Theoretical Cryptography Conference
+                </a>
+              </li>
+              <li>
+                <a href="https://asiacrypt.iacr.org/2018">
+                  Asiacrypt 2018
+                </a>
+              </li>
+              <li>
+                <a href="https://crypto.iacr.org/2018">
+                  Crypto 2018
+                </a>
+              </li>
+            </ul>
+          </p>
         </div>
       </div>
 
-      <!-- TODO: formatting -->
-      <div id="screenshots" class="row">
-        <div class="col">
-          <p>
-            Here are a couple of more screenshots.
-          </p>
-        </div>
-      </div>
+      <!-- TODO: better formatting/layout -->
       <div class="row">
-        <div class="col-sm-6">
-          <a target="_blank" href="http://geekscat.com/visual/programcreator5.png"><img class="img-fluid" src="http://geekscat.com/visual/programcreator5.png"></a>
-        </div>
-        <div class="col-sm-6">
-          <a target="_blank" href="http://geekscat.com/visual/programcreator12.png"><img class="img-fluid" src="http://geekscat.com/visual/programcreator12.png"></a>
+        <div class="col-sm-12">
+          <h4>Here are a couple of example screenshots, or see the <a class="btn btn-primary" href="https://github.com/kaymckelly/freelance-iacr">GitHub</a></h4>
         </div>
       </div>
+      <div id="screenshots" class="row">
+        <div class="col-sm-6">
+          <a target="_blank" href="https://eurocrypt.iacr.org/2018/"><img class="img-fluid" src="ec2018"></a>
+        </div>
+        <div class="col-sm-6">
+          <a target="_blank" href="https://fse.iacr.org/2018/"><img class="img-fluid" src="fse2018.png"></a>
+        </div>
+      </div>
+
     </main>
 
     <!-- scripts: bootstrap -->
