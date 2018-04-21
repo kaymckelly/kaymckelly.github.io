@@ -1,34 +1,19 @@
-(function($) {
-  $.fn.parallax = function(options) {
-    var windowHeight = $(window).height();
+// putting dynamic content in the modal for lightbox-style viewing of larger screenshots
+$(document).ready(function() {
+  $(a.lightbox).click(function(event) {
+    event.preventDefault();
+    var content = $('.modal-body');
+    content.empty();
 
-    // Establish default settings
-    var settings = $.extend({speed: 0.15}, options);
+    content.html($(this).html());
+  })
+})
 
-    // Iterate over each object in collection
-    return this.each( function() {
-      // Save a reference to the element
-      var $this = $(this);
 
-      // Set up Scroll Handler
-      $(document).scroll(function(){
-        var scrollTop = $(window).scrollTop();
-        var offset = $this.offset().top;
-        var height = $this.outerHeight();
-
-    		// Check if above or below viewport
-			  if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-          return;
-        }
-
-        var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-
-        // Apply the Y Background Position to Set the Parallax Effect
-        $this.css('background-position', 'center ' + yBgPosition + 'px');
-      });
-    });
-  }
-}(jQuery));
-
-$('.bg-1,.bg-3').parallax({speed:	0.15});
-$('.bg-2').parallax({speed :	0.25});
+// $('#exampleModalCenter').on('show.bs.modal', function (event) {
+//   var button = $(event.relatedTarget);
+//   var recipient = button.data('whatever');
+//   var modal = $(this);
+//   modal.find('.modal-body').text('the message is ' + recipient);
+//   modal.find('.modal-body').val(recipient);
+// });
