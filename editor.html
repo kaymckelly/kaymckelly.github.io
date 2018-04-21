@@ -63,7 +63,7 @@
 
     <main>
       <div class="row">
-        <header class="col-12">
+        <header id="header" class="col-12">
           <h2>
             Conference Program Editor
           </h2>
@@ -89,18 +89,56 @@
             Here's a screen capture of the drag and drop action for adding a talk to the schedule.
           </p> -->
         </section>
-        <aside class="col-sm-4">
+        <aside class="col-sm-4 alert" role="alert">
           <h4>
             Demo
           </h4>
           <p>
             You will need to login with username "guest" and a password consisting of your email address. Test programs are deleted regularly.
           </p>
+          <p>
+            Please note that this demo is not intended for use on mobile. Because drag and drop on mobile = ew.
+          </p>
           <a href="http://geekscat.com/program-editor/" class="btn btn-block purpleButton">
             Take me to the demo!
           </a>
         </aside>
       </div>
+
+      <div class="row">
+        <figure class="figure col-12">
+          <h4>
+            Screenshots
+          </h4>
+          <img src="./visual/editorDemo.gif" class="figure-img img-fluid rounded" alt="Moving gif image of what dragging and dropping talks into sessions looks like, as well as the modal that appears when you're editing a talk." />
+          <figcaption class="figure-caption">
+            In case you don't feel like trying to demo yourself, here's a short screen capture of what adding a talk to a session and editing that talk looks like.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="row">
+        <figure class="figure col-12 col-sm-4">
+          <!-- TODO: make images clickable and display at size in a modal or other dismissable overlay -->
+          <img src="./visual/editor2.png" class="figure-img img-fluid img-thumbnail" alt="Screenshot of the editor, done in shades of teal, with two buttons asking if you're making a new program or opening an existing one. A navbar runs along the top with more options, including help." />
+          <figcaption class="figure-caption">
+            What you see upon arrival to the editor.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-sm-4">
+          <img src="./visual/editor3.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a session, where you can set the title, location, and moderator." />
+          <figcaption class="figure-caption">
+            This is how you edit a session, with options for setting title, location, and moderator.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-sm-4">
+          <img src="./visual/editor4.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a time slot. From here you can also delete a time slot or split it into two tracks." />
+          <figcaption class="figure-caption">
+            Editing time slots is also possible.
+          </figcaption>
+        </figure>
+      </div>
+
       <!-- TODO: formatting -->
       <!-- <div class="row">
         <div class="col">
