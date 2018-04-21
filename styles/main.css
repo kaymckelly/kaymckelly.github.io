@@ -52,3 +52,12 @@ h1 {
 a.link {
   color: #008068;
 }
+
+h2#projectTitle {
+  font-size: 2.2em;
+}
+
+h3#projectSubtitle {
+  color: #005A49;
+  font-size: 1.4em;
+}
