@@ -38,8 +38,12 @@
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./editor.html">Conference Program Editor</a>
-              <a class="dropdown-item" href="./template.html">Reusable Conference Template</a>
+              <a class="dropdown-item" href="./editor.html">
+                Conference Program Editor <span class="sr-only">(current)</span>
+              </a>
+              <a class="dropdown-item" href="./template.html">
+                Reusable Conference Template
+              </a>
             </div>
           </li>
           <li class="nav-item">
@@ -66,38 +70,46 @@
         </header>
       </div>
       <div class="row">
-        <section class="col-12">
+        <section class="col-12 col-sm-8">
           <p>
             The most complicated part about a conference website is the program, which needs to support multiple tracks and hierarchical organization of sessions. In the past, conference chairs would often resort to creating index cards for each talk, and arranging them on a table to group things together (I am not making this up - it actually happened!). The natural evolution of this is a drag-and-drop user interface that allows the conference program chair to arrange the talks visually, so that's what I set about building.
           </p>
           <p>
-            The conference chair starts from a list of accepted papers in JSON format (which for IACR is derived from <a href="https://shaih.github.io/websubrev/">websubrev</a>). They answer a few simple questions and start filling in the extra information about session chairs, times, breaks, etc. Users can save and return to edit a schedule later, or start from a basic template.
+            The conference chair starts from a list of accepted papers in JSON format (which for IACR is derived from <a href="https://shaih.github.io/websubrev/" class="link">websubrev</a>). They answer a few simple questions and start filling in the extra information about session chairs, times, breaks, etc. Users can save and return to edit a schedule later, or start from a basic template.
           </p>
           <p>
             This was built with Bootstrap 3,
-            jQuery, <a href="https://github.com/bevacqua/dragula">dragula</a>, the jQuery date range picker plugin, time picker plugin, and the JavaScript plugin datepair. This is in active use on the IACR site, but a demo is also provided below.
+            jQuery, <a href="https://github.com/bevacqua/dragula" class="link">dragula</a>, the <a href="https://github.com/longbill/jquery-date-range-picker" class="link">jQuery date range picker plugin</a>, <a href="https://github.com/jonthornton/jquery-timepicker" class="link">time picker plugin</a>, and the JavaScript plugin <a href="https://github.com/jonthornton/Datepair.js" class="link">datepair</a>. This is in active use on the IACR site.
           </p>
           <p>
-            <!-- TODO: move somewhere else -->
-            <a href="https://github.com/kaymckelly/program-editor" class="btn btn-primary">Github</a>
-            <!-- TODO: move to own section (alert?) -->
-            <a href="http://geekscat.com/program-editor/" class="btn btn-primary">Demo</a> (Note that you will need to login with username "guest" and a password consisting of your email address).
+            <a href="https://github.com/kaymckelly/program-editor" class="btn purpleButton">See the code on GitHub</a>
           </p>
-          <!-- TODO: better formatting for screen captures and images -->
-          <p>
+          <!-- TODO: better formatting for screen captures and images. also separate row/divs -->
+          <!-- <p>
             Here's a screen capture of the drag and drop action for adding a talk to the schedule.
-          </p>
+          </p> -->
         </section>
+        <aside class="col-sm-4">
+          <h4>
+            Demo
+          </h4>
+          <p>
+            You will need to login with username "guest" and a password consisting of your email address. Test programs are deleted regularly.
+          </p>
+          <a href="http://geekscat.com/program-editor/" class="btn btn-block purpleButton">
+            Take me to the demo!
+          </a>
+        </aside>
       </div>
       <!-- TODO: formatting -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col">
           <img src="editor2.gif" class="img-fluid" />
         </div>
-      </div>
+      </div> -->
 
       <!-- TODO: formatting -->
-      <div id="screenshots" class="row">
+      <!-- <div class="row">
         <div class="col">
           <p>
             Here are a couple of more screenshots.
@@ -111,7 +123,7 @@
         <div class="col-sm-6">
           <a target="_blank" href="http://geekscat.com/visual/programcreator12.png"><img class="img-fluid" src="http://geekscat.com/visual/programcreator12.png"></a>
         </div>
-      </div>
+      </div> -->
     </main>
 
     <!-- scripts: bootstrap -->
