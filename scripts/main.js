@@ -1,19 +1,19 @@
-// putting dynamic content in the modal for lightbox-style viewing of larger screenshots
+// adapted from https://bootstrapcreative.com/pattern/image-lightbox-modal/
+
 $(document).ready(function() {
-  $(a.lightbox).click(function(event) {
-    event.preventDefault();
-    var content = $('.modal-body');
-    content.empty();
+  var $imageSrc;
+  // get source of what you're clicking on and assign it to the variable $imageSrc
+  $('.gallery img').click(function() {
+      $imageSrc = $(this).data('embiggen');
+  });
 
-    content.html($(this).html());
-  })
-})
+  // when modal is triggered, gt the image within and change its' source to be the one you captured above
+  $('#exampleModalCenter').on('shown.bs.modal', function (e) {
+    $("#image").attr('src', $imageSrc);
+  });
 
-
-// $('#exampleModalCenter').on('show.bs.modal', function (event) {
-//   var button = $(event.relatedTarget);
-//   var recipient = button.data('whatever');
-//   var modal = $(this);
-//   modal.find('.modal-body').text('the message is ' + recipient);
-//   modal.find('.modal-body').val(recipient);
-// });
+  // reset on closure (yes, there's more elegant ways to do this but hey, it works)
+  $('#exampleModalCenter').on('hide.bs.modal', function (e) {
+      $("#image").attr('src','#');
+  });
+});
