@@ -1,43 +1,12 @@
 /* Color theme created by Kay McKelly: https://coolors.co/005a49-004c7f-f0f7ff-04001e-400061 */
 
+
 /**** General ****/
 body {
   color: #04001E;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   background-color: rgba(240, 247, 255, 0.2);
-}
-
-/* TODO part deux: get rid of outline on hamburger when pressed */
-nav {
-  border-color: rgba(240, 247, 255, 0.6);
-  padding: 0px !important;
-}
-
-button.navbar-toggler {
-
-}
-
-a.nav-link {
-  color: #400061 !important;
-}
-
-div.dropdown-menu {
-  background-color: #F0F7FF;
-  font-size: 0.9em;
-}
-
-div.dropdown-menu :hover {
-  background-color: #400061;
-}
-
-span.icon {
-  font-size: 1.7em;
-  color: #400061;
-}
-
-span.icon:hover {
-  color: #008068;
 }
 
 #headerCol {
@@ -81,6 +50,36 @@ h3#projectSubtitle {
   font-size: 1.4em;
 }
 
-.gallery > figure {
-  cursor: pointer;
+
+/**** Nav ****/
+nav {
+  border-color: rgba(240, 247, 255, 0.6);
+  padding: 0px !important;
+}
+
+/* TODO later: get rid of gold outline on hamburger when pressed */
+/* button.navbar-toggler {
+
+} */
+
+a.nav-link {
+  color: #400061 !important;
+}
+
+div.dropdown-menu {
+  background-color: #F0F7FF;
+  font-size: 0.9em;
+}
+
+div.dropdown-menu :hover {
+  background-color: #400061;
+}
+
+span.icon {
+  font-size: 1.7em;
+  color: #400061;
+}
+
+span.icon:hover {
+  color: #008068;
 }
