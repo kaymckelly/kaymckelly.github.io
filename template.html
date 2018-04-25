@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Kay McKelly</title>
+
+    <!-- styles: general -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-dGOMD5bzPwVfOGp4zGQiudlmCab9PN0dIsv1r1MCotfVsSXM3m5ZiqEVO56XzCCh" crossorigin="anonymous">
+
+    <!-- styles: fonts & icons -->
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Open+Sans" rel="stylesheet">
+    <link href="./styles/ionicons.css" rel="stylesheet">
+
+    <!-- styles: personal -->
+    <link href="./styles/main.css" rel="stylesheet">
+  </head>
+
+  <body class="container">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <a class="navbar-brand" href="/">
+        <img src="./visual/glasses.png" width="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseMe" aria-controls="collapseMe" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapseMe">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./editor.html">
+                Conference Program Editor
+              </a>
+              <a class="dropdown-item" href="./template.html">
+                Reusable Conference Template <span class="sr-only">(current)</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./files/KayMcKelly.pdf">
+              Resum&eacute;
+            </a>
+          </li>
+        </ul>
+        <a class="navbar-brand" href="https://www.linkedin.com/in/kaymckelly" target="_blank">
+          <span class="icon ion-social-linkedin-outline" aria-label="LinkedIn" title="LinkedIn"></span>
+        </a>
+        <a class="navbar-brand" href="https://github.com/kaymckelly" target="_blank">
+          <span class="icon ion-social-github" aria-label="GitHub" title="GitHub"></span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="row">
+        <header id="header" class="col-12">
+          <h2 id="projectTitle">
+            Reusable Conference Template
+          </h2>
+          <h3 id="projectSubtitle">
+            Freelance project done for the International Association for Cryptologic Research (IACR)
+          </h3>
+        </header>
+      </div>
+      <div class="row">
+        <section class="col-12 col-md-8">
+          <p>
+            IACR commissioned me to build a mobile-friendly website template for conferences that organizers could easily clone and reuse. IACR was primarily interested in making their conference site mobile-accessible, maintainable, and easy for conference organizers to edit.
+          </p>
+          <p>
+            Features include responsive menus and a mobile friendly design using Bootstrap 3.3. Additional touches include display of conference name after scrolling past the header when in mobile view, countdown timers for deadlines, and a conference schedule that is output from the <a href="./editor.html" class="link">program editor</a>. I created a <a href="https://coolors.co/cb831e-1f2161-2e3192-0f773c-fefdfb" class="link">color palette</a> for the site based on IACR's logo, with shades of orange and green that complement the deep indigo of the logo. I've deployed a demo instance of the template, which may be viewed <a href="http://geekscat.com/iacr-demo/" class="link">here</a>.
+          </p>
+          <p>
+            I also wrote documentation to help conference organizers with editing the template and installation of the site on the IACR servers. The template has since been used by several conference organizers (see list). Feedback from organizers is welcomed and encouraged, to improve the template for future users.
+          </p>
+          <p>
+            <a href="https://github.com/kaymckelly/freelance-iacr" class="btn purpleButton">See the code on GitHub</a>
+          </p>
+        </section>
+
+        <aside class="col-12 col-md-4">
+          <p>
+            This template has been in use since 2017. Some conferences that have used the template include:
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://asiacrypt.iacr.org/2018" class="link" target="_blank">
+                  Asiacrypt
+                </a>
+              </li>
+              <li>
+                <a href="https://crypto.iacr.org/2018" class="link" target="_blank">
+                  Crypto
+                </a>
+              </li>
+              <li>
+                <a href="https://eurocrypt.iacr.org/2018" class="link" target="_blank">
+                  Eurocrypt
+                </a>
+              </li>
+              <li>
+                <a href="https://fse.iacr.org/2018" class="link" target="_blank">
+                  Fast Software Encryption
+                </a>
+              </li>
+              <li>
+                <a href="https://pkc.iacr.org/2018" class="link" target="_blank">
+                  Public Key Cryptography
+                </a>
+              </li>
+              <li>
+                <a href="https://tcc.iacr.org/2018" class="link" target="_blank">
+                  Theoretical Cryptography Conference
+                </a>
+              </li>
+            </ul>
+          </p>
+        </aside>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h4>
+            Screenshots
+          </h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/template1.png" class="figure-img img-fluid rounded" alt="Screenshot of FSE 2018 conference website, done in soft shades of blue." />
+          <figcaption class="figure-caption">
+            Fast Software Encryption (FSE) using the more subtle blue color scheme.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/template2.png" class="figure-img img-fluid rounded" alt="Screenshot of RWC symposium website, in shades of orange and green." />
+          <figcaption class="figure-caption">
+            Real World Crypto (RWC) Symposium chose a minimalist version of the theme, with the default colors and no background image for the header.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/template3.png" class="figure-img img-fluid rounded" alt="Screenshot of TCC conference website in gray and blue shades." />
+          <figcaption class="figure-caption">
+            Theory of Cryptography Conference (TCC) using a custom color scheme with gray and a navy blue as the primary colors.
+          </figcaption>
+        </figure>
+      </div>
+
+    </main>
+
+    <!-- scripts: bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Kay McKelly</title>
+
+    <!-- styles: bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-dGOMD5bzPwVfOGp4zGQiudlmCab9PN0dIsv1r1MCotfVsSXM3m5ZiqEVO56XzCCh" crossorigin="anonymous">
+
+    <!-- styles: fonts & icons -->
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Open+Sans" rel="stylesheet">
+    <link href="./styles/ionicons.css" rel="stylesheet">
+
+    <!-- styles: personal -->
+    <link href="./styles/main.css" rel="stylesheet">
+  </head>
+
+  <body class="container">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <a class="navbar-brand" href="/">
+        <img src="./visual/glasses.png" width="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseMe" aria-controls="collapseMe" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapseMe">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./editor.html">
+                Conference Program Editor <span class="sr-only">(current)</span>
+              </a>
+              <a class="dropdown-item" href="./template.html">
+                Reusable Conference Template
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./files/KayMcKelly.pdf">
+              Resum&eacute;
+            </a>
+          </li>
+        </ul>
+        <a class="navbar-brand" href="https://www.linkedin.com/in/kaymckelly" target="_blank">
+          <span class="icon ion-social-linkedin-outline" aria-label="LinkedIn" title="LinkedIn"></span>
+        </a>
+        <a class="navbar-brand" href="https://github.com/kaymckelly" target="_blank">
+          <span class="icon ion-social-github" aria-label="GitHub" title="GitHub"></span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="row">
+        <header id="header" class="col-12">
+          <h2 id="projectTitle">
+            Conference Program Editor
+          </h2>
+          <h3 id="projectSubtitle">
+            Freelance project done for the International Association for Cryptologic Research (IACR)
+          </h3>
+        </header>
+      </div>
+      <div class="row">
+        <section class="col-12 col-md-8">
+          <p>
+            The most complicated part about a conference website is the program, which needs to support multiple tracks and hierarchical organization of sessions. In the past, conference chairs would often resort to creating index cards for each talk, and arranging them on a table to group things together (I am not making this up - it actually happened!). The natural evolution of this is a drag-and-drop user interface that allows the conference program chair to arrange the talks visually, so that's what I set about building.
+          </p>
+          <p>
+            The conference chair starts from a list of accepted papers in JSON format (which for IACR is derived from <a href="https://shaih.github.io/websubrev/" class="link">websubrev</a>). They answer a few simple questions and start filling in the extra information about session chairs, times, breaks, etc. Users can save and return to edit a schedule later, or start from a basic template.
+          </p>
+          <p>
+            This was built with Bootstrap 3,
+            jQuery, <a href="https://github.com/bevacqua/dragula" class="link">dragula</a>, the <a href="https://github.com/longbill/jquery-date-range-picker" class="link">jQuery date range picker plugin</a>, <a href="https://github.com/jonthornton/jquery-timepicker" class="link">time picker plugin</a>, and the JavaScript plugin <a href="https://github.com/jonthornton/Datepair.js" class="link">datepair</a>. This is in active use on the IACR site.
+          </p>
+          <p>
+            <a href="https://github.com/kaymckelly/program-editor" class="btn purpleButton">See the code on GitHub</a>
+          </p>
+        </section>
+        <aside class="col-12 col-md-4 alert" role="alert">
+          <h4>
+            Demo
+          </h4>
+          <p>
+            You will need to login with username "guest" and a password consisting of your email address. Test programs are deleted regularly.
+          </p>
+          <p>
+            Please note that this demo is not intended for use on mobile. Because drag and drop on mobile = ew.
+          </p>
+          <a href="http://geekscat.com/program-editor/" class="btn btn-block purpleButton">
+            Take me to the demo!
+          </a>
+        </aside>
+      </div>
+
+      <div class="row">
+        <figure class="figure col-12">
+          <h4>
+            Screenshots
+          </h4>
+          <img src="./visual/editorDemo.gif" class="figure-img img-fluid rounded" alt="Moving gif image of what dragging and dropping talks into sessions looks like, as well as the modal that appears when you're editing a talk." />
+          <figcaption class="figure-caption">
+            In case you don't feel like trying to demo yourself, here's a short screen capture of what adding a talk to a session and editing that talk looks like.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="row">
+        <!-- TODO later: do a nice lightbox sans additional dependencies -->
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/editor2.png" class="figure-img img-fluid img-thumbnail" alt="Screenshot of the editor, done in shades of teal, with two buttons asking if you're making a new program or opening an existing one. A navbar runs along the top with more options, including help." />
+          <figcaption class="figure-caption">
+            What you see upon arrival to the editor.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/editor3.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a session, where you can set the title, location, and moderator." />
+          <figcaption class="figure-caption">
+            This is how you edit a session, with options for setting title, location, and moderator.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/editor4.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a time slot. From here you can also delete a time slot or split it into two tracks." />
+          <figcaption class="figure-caption">
+            Editing time slots is also possible.
+          </figcaption>
+        </figure>
+      </div>
+
+    </main>
+
+    <!-- scripts: bootstrap (required) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  </body>
+</html>

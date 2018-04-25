@@ -1,34 +1,20 @@
-(function($) {
-  $.fn.parallax = function(options) {
-    var windowHeight = $(window).height();
+// TODO later: find a less trash/laggy way to do this sort of thing
+// adapted from https://bootstrapcreative.com/pattern/image-lightbox-modal/
 
-    // Establish default settings
-    var settings = $.extend({speed: 0.15}, options);
+// $(document).ready(function() {
+//   var $imageSrc;
+  // get source of what you're clicking on and assign it to the variable $imageSrc
+  // $('.gallery img').click(function() {
+  //     $imageSrc = $(this).data('embiggen');
+  // });
 
-    // Iterate over each object in collection
-    return this.each( function() {
-      // Save a reference to the element
-      var $this = $(this);
+  // when modal is triggered, gt the image within and change its' source to be the one you captured above
+  // $('#exampleModalCenter').on('shown.bs.modal', function (e) {
+  //   $("#image").attr('src', $imageSrc);
+  // });
 
-      // Set up Scroll Handler
-      $(document).scroll(function(){
-        var scrollTop = $(window).scrollTop();
-        var offset = $this.offset().top;
-        var height = $this.outerHeight();
-
-    		// Check if above or below viewport
-			  if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-          return;
-        }
-
-        var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-
-        // Apply the Y Background Position to Set the Parallax Effect
-        $this.css('background-position', 'center ' + yBgPosition + 'px');
-      });
-    });
-  }
-}(jQuery));
-
-$('.bg-1,.bg-3').parallax({speed:	0.15});
-$('.bg-2').parallax({speed :	0.25});
+  // reset on closure (yes, there's more elegant ways to do this but hey, it works)
+//   $('#exampleModalCenter').on('hide.bs.modal', function (e) {
+//       $("#image").attr('src','#');
+//   });
+// });
