@@ -30,7 +30,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="/">
-              Home <span class="sr-only">(current)</span>
+              Home
             </a>
           </li>
           <li class="nav-item dropdown active">
@@ -63,14 +63,17 @@
 
     <main>
       <div class="row">
-        <header class="col-12">
-          <h2>
+        <header id="header" class="col-12">
+          <h2 id="projectTitle">
             Reusable Conference Template
           </h2>
+          <h3 id="projectSubtitle">
+            Freelance project done for the International Association for Cryptologic Research (IACR)
+          </h3>
         </header>
       </div>
       <div class="row">
-        <section class="col-sm-8">
+        <section class="col-12 col-md-8">
           <!-- TODO: edit/read-through -->
           <p>
             IACR commissioned me to build a mobile-friendly website template for conferences that organizers could easily clone and reuse. IACR was primarily interested in making their conference site mobile-accessible, maintainable, and easy for conference organizers to edit.
@@ -81,39 +84,41 @@
           <p>
             I also wrote documentation to help conference organizers with editing of the template and installation on the IACR servers. The template has since been used by several conference organizers. One of these instances is Asiacrypt 2017. Feedback from organizers is welcomed and encouraged, to improve the template for future users.
           </p>
+          <p>
+            <a href="https://github.com/kaymckelly/freelance-iacr" class="btn purpleButton">See the code on GitHub</a>
+          </p>
         </section>
-        <!-- TODO: styling and tags -->
-        <div class="col-sm-4">
+        <div class="col-12 col-md-4">
           <p>
             Some conferences using this (different stages of progress)
             <ul class="list-unstyled">
               <li>
-                <a href="https://eurocrypt.iacr.org/2018">
+                <a href="https://eurocrypt.iacr.org/2018" class="link">
                   Eurocrypt 2018
                 </a>
               </li>
               <li>
-                <a href="https://pkc.iacr.org/2018">
+                <a href="https://pkc.iacr.org/2018" class="link">
                   Public Key Cryptography 2018
                 </a>
               </li>
               <li>
-                <a href="https://fse.iacr.org/2018">
+                <a href="https://fse.iacr.org/2018" class="link">
                   Fast Software Encryption 2018
                 </a>
               </li>
               <li>
-                <a href="https://tcc.iacr.org/2018">
+                <a href="https://tcc.iacr.org/2018" class="link">
                   Theoretical Cryptography Conference
                 </a>
               </li>
               <li>
-                <a href="https://asiacrypt.iacr.org/2018">
+                <a href="https://asiacrypt.iacr.org/2018" class="link">
                   Asiacrypt 2018
                 </a>
               </li>
               <li>
-                <a href="https://crypto.iacr.org/2018">
+                <a href="https://crypto.iacr.org/2018" class="link">
                   Crypto 2018
                 </a>
               </li>
@@ -122,19 +127,33 @@
         </div>
       </div>
 
-      <!-- TODO: better formatting/layout -->
       <div class="row">
-        <div class="col-sm-12">
-          <h4>Here are a couple of example screenshots, or see the <a class="btn btn-primary" href="https://github.com/kaymckelly/freelance-iacr">GitHub</a></h4>
+        <div class="col-12">
+          <h4>
+            Screenshots
+          </h4>
         </div>
       </div>
-      <div id="screenshots" class="row">
-        <div class="col-sm-6">
-          <a target="_blank" href="https://eurocrypt.iacr.org/2018/"><img class="img-fluid" src="ec2018"></a>
-        </div>
-        <div class="col-sm-6">
-          <a target="_blank" href="https://fse.iacr.org/2018/"><img class="img-fluid" src="fse2018.png"></a>
-        </div>
+
+      <div class="row">
+        <figure class="figure col-12 col-md-4">
+          <img src="" class="figure-img img-fluid rounded" alt="" />
+          <figcaption class="figure-caption">
+            text
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="" class="figure-img img-fluid rounded" alt="" />
+          <figcaption class="figure-caption">
+            and some more text
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="" class="figure-img img-fluid rounded" alt="" />
+          <figcaption class="figure-caption">
+            moar text
+          </figcaption>
+        </figure>
       </div>
 
     </main>

@@ -59,7 +59,6 @@ nav {
 
 /* TODO later: get rid of gold outline on hamburger when pressed */
 /* button.navbar-toggler {
-
 } */
 
 a.nav-link {
@@ -82,4 +81,10 @@ span.icon {
 
 span.icon:hover {
   color: #008068;
+}
+
+
+/**** Individual Project Pages ****/
+figcaption.figure-caption {
+  color: rgba(4, 0, 30, 0.7);
 }
