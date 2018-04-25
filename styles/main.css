@@ -14,13 +14,30 @@ nav {
   padding: 0px !important;
 }
 
+button.navbar-toggler {
+
+}
+
 a.nav-link {
   color: #400061 !important;
+}
+
+div.dropdown-menu {
+  background-color: #F0F7FF;
+  font-size: 0.9em;
+}
+
+div.dropdown-menu :hover {
+  background-color: #400061;
 }
 
 span.icon {
   font-size: 1.7em;
   color: #400061;
+}
+
+span.icon:hover {
+  color: #008068;
 }
 
 #headerCol {
@@ -43,10 +60,13 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* TODO: this hover is still red -_- */
 .purpleButton {
   background-color: #400061;
   color: #F0F7FF;
+}
+
+.purpleButton:hover {
+  color: #00997D;
 }
 
 a.link {
@@ -58,6 +78,9 @@ h2#projectTitle {
 }
 
 h3#projectSubtitle {
-  color: #005A49;
   font-size: 1.4em;
+}
+
+.gallery > figure {
+  cursor: pointer;
 }
