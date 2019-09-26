@@ -10,4 +10,4 @@ Initially suggested title of this repo: studious-waffle. Continuing with the the
 - furryPotato (guinea pig)
 - booplesnoot (rabbit)
 
-This site is a demo of my design/dev skills. HTML5, CSS3, Twitter Bootstrap. Available at geekscat.com or kaymckelly.com
+This site is a demo of my design/dev skills. HTML5, CSS3, Twitter Bootstrap. Available at kaymckelly.com
