@@ -75,59 +75,51 @@
           </h3>
         </header>
       </div>
+
       <div class="row">
-        <section class="col-12 col-md-8">
+        <section class="col-12">
           <p>
-            stuff
+            IACR had a legacy website originating in the 1990s that needed to be rewritten for mobile. It consisted of many legacy technologies, including old-style PHP, multiple MySQL databases, Perl 😬, and 5000+ static pages in a variety of styles.
           </p>
           <p>
-            This was built with Bootstrap 4.3.1,
-            jQuery, <a href="https://github.com/bevacqua/dragula" class="link">dragula</a>, the <a href="https://github.com/longbill/jquery-date-range-picker" class="link">jQuery date range picker plugin</a>, <a href="https://github.com/jonthornton/jquery-timepicker" class="link">time picker plugin</a>, and the JavaScript plugin <a href="https://github.com/jonthornton/Datepair.js" class="link">datepair</a>.
+            I converted the PHP database-driven pages to use Twig templates, and the static pages were rewritten using Beautiful Soup to use the same templates.
           </p>
           <p>
-            This code is in a private reposity on Github but you can see it deployed <a href="https://www.iacr.org" class="link">here</a>.
+            The site was built with Bootstrap 4.3.1,
+            jQuery, JavaScript, <a href="https://www.highcharts.com/" class="link">Highcharts</a>, <a href="https://www.mathjax.org/" class="link">MathJax</a>, <a href="http://easyautocomplete.com/" class="link">EasyAutocomplete</a>, and the <a href="https://github.com/longbill/jquery-date-range-picker" class="link">jQuery date range picker plugin</a>, along with many other components.
+          </p>
+          <p>
+            This code is in a private repository on Github but you can see it deployed <a href="https://www.iacr.org" class="link">here</a>.
           </p>
         </section>
-        <aside class="col-12 col-md-4">
-          <h4>
-            Demo
-          </h4>
-          <p>
-            text
-          </p>
-        </aside>
       </div>
 
       <div class="row">
-        <figure class="figure col-12">
+        <div class="col-12">
           <h4>
             Screenshots
           </h4>
-          <img src="./visual/editorDemo.gif" class="figure-img img-fluid rounded" alt="Moving gif image of what dragging and dropping talks into sessions looks like, as well as the modal that appears when you're editing a talk." />
-          <figcaption class="figure-caption">
-            In case you don't feel like trying to demo yourself, here's a short screen capture of what adding a talk to a session and editing that talk looks like.
-          </figcaption>
-        </figure>
+        </div>
       </div>
 
       <div class="row">
         <!-- TODO later: do a nice lightbox sans additional dependencies -->
-        <figure class="figure col-12 col-md-4">
-          <img src="./visual/editor2.png" class="figure-img img-fluid img-thumbnail" alt="Screenshot of the editor, done in shades of teal, with two buttons asking if you're making a new program or opening an existing one. A navbar runs along the top with more options, including help." />
+        <figure class="figure col-12 col-md-6">
+          <img src="./visual/iacrdesktop.png" class="figure-img img-fluid img-thumbnail" alt="Screenshot of the main IACR website. There is a dark blue menu that is open. The background is pale gray triangles with faint orange outlines." title="Screenshot of the main IACR website" />
           <figcaption class="figure-caption">
-            What you see upon arrival to the editor.
+            This page pulls from 3 separate databases and folds to a single column in mobile.
           </figcaption>
         </figure>
-        <figure class="figure col-12 col-md-4">
-          <img src="./visual/editor3.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a session, where you can set the title, location, and moderator." />
+        <figure class="figure col-12 col-md-3">
+          <img src="./visual/iacrmobile1.png" class="figure-img img-fluid img-thumbnail" alt="Mobile screenshot of the calender of events page." />
           <figcaption class="figure-caption">
-            This is how you edit a session, with options for setting title, location, and moderator.
+            What one of the pages looks like in mobile.
           </figcaption>
         </figure>
-        <figure class="figure col-12 col-md-4">
-          <img src="./visual/editor4.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a time slot. From here you can also delete a time slot or split it into two tracks." />
+        <figure class="figure col-12 col-md-3">
+          <img src="./visual/iacrmobile2.png" class="figure-img img-fluid img-thumbnail" alt="Mobile screenshot of the top menu open." />
           <figcaption class="figure-caption">
-            Editing time slots is also possible.
+            How the open menu appears in mobile.
           </figcaption>
         </figure>
       </div>
