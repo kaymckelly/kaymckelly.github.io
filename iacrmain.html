@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Freelance Seattle web developer seeks employment at a company focused on teamwork, good design, and building cool stuff.">
 
     <title>Kay McKelly</title>
 
-    <!-- styles: general -->
+    <!-- styles: bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-1OYccka9EByiS23wvPFiYHBPRAgU91xYVFb8g8sen6vRiBI5Uko6+B87q8zPGUnA" crossorigin="anonymous">
 
     <!-- styles: fonts & icons -->
@@ -29,12 +28,12 @@
 
       <div class="collapse navbar-collapse" id="collapseMe">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/">
-              Home <span class="sr-only">(current)</span>
+              Home
             </a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Projects
             </a>
@@ -46,7 +45,7 @@
                 Reusable Conference Template
               </a>
               <a class="dropdown-item" href="./iacrmain.html">
-                IACR Main Website
+                IACR Main Website <span class="sr-only">(current)</span>
               </a>
             </div>
           </li>
@@ -65,73 +64,77 @@
       </div>
     </nav>
 
-    <header class="row" id="header">
-      <article class="col-12" id="headerCol">
-        <h1>
-          Kay McKelly
-        </h1>
-      </article>
-    </header>
-
     <main>
       <div class="row">
-        <header class="col-12">
-          <h2>
-            About
+        <header id="header" class="col-12">
+          <h2 id="projectTitle">
+            IACR Main Website
           </h2>
+          <h3 id="projectSubtitle">
+            Freelance project done for the International Association for Cryptologic Research (IACR)
+          </h3>
         </header>
       </div>
       <div class="row">
-        <section class="col-sm-8 col-12">
+        <section class="col-12 col-md-8">
           <p>
-            Hi, I'm Kay and I'm a software developer in Seattle. I've worked with a lot of different technologies including the NEAP stack (Node, Express, Angular, PostgreSQL), .NET framework (specifically ASP.NET Core 2.0), HTML/CSS/JavaScript/jQuery, and Python (with and without the Django framework). I like to learn about new technologies and best practices for them, then put them to the test.
+            stuff
           </p>
           <p>
-            My interests include accessibility, mobile-first development, user interface design, security, and privacy. I've also been teaching myself Java and would love to do more with it. For now, I'm most familiar with JavaScript, C#, and Python.
+            This was built with Bootstrap 4.3.1,
+            jQuery, <a href="https://github.com/bevacqua/dragula" class="link">dragula</a>, the <a href="https://github.com/longbill/jquery-date-range-picker" class="link">jQuery date range picker plugin</a>, <a href="https://github.com/jonthornton/jquery-timepicker" class="link">time picker plugin</a>, and the JavaScript plugin <a href="https://github.com/jonthornton/Datepair.js" class="link">datepair</a>.
+          </p>
+          <p>
+            This code is in a private reposity on Github but you can see it deployed <a href="https://www.iacr.org" class="link">here</a>.
           </p>
         </section>
-        <figure class="col-sm-4">
-          <img src="./visual/cropHeadshot.png" class="img-fluid img-thumbnail" alt="a pale woman in a black t-shirt with a shaved head and glasses smiling with her arms folded" title="thanks for the headshot Todd Bennings!" />
+        <aside class="col-12 col-md-4">
+          <h4>
+            Demo
+          </h4>
+          <p>
+            text
+          </p>
+        </aside>
+      </div>
+
+      <div class="row">
+        <figure class="figure col-12">
+          <h4>
+            Screenshots
+          </h4>
+          <img src="./visual/editorDemo.gif" class="figure-img img-fluid rounded" alt="Moving gif image of what dragging and dropping talks into sessions looks like, as well as the modal that appears when you're editing a talk." />
+          <figcaption class="figure-caption">
+            In case you don't feel like trying to demo yourself, here's a short screen capture of what adding a talk to a session and editing that talk looks like.
+          </figcaption>
         </figure>
       </div>
 
       <div class="row">
-        <header class="col-12">
-          <h2 id="bumpTitle">
-            Recent Projects
-          </h2>
-        </header>
+        <!-- TODO later: do a nice lightbox sans additional dependencies -->
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/editor2.png" class="figure-img img-fluid img-thumbnail" alt="Screenshot of the editor, done in shades of teal, with two buttons asking if you're making a new program or opening an existing one. A navbar runs along the top with more options, including help." />
+          <figcaption class="figure-caption">
+            What you see upon arrival to the editor.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/editor3.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a session, where you can set the title, location, and moderator." />
+          <figcaption class="figure-caption">
+            This is how you edit a session, with options for setting title, location, and moderator.
+          </figcaption>
+        </figure>
+        <figure class="figure col-12 col-md-4">
+          <img src="./visual/editor4.png" class="figure-img img-fluid img-thumbnail" alt="The modal for editing a time slot. From here you can also delete a time slot or split it into two tracks." />
+          <figcaption class="figure-caption">
+            Editing time slots is also possible.
+          </figcaption>
+        </figure>
       </div>
 
-      <div class="row">
-        <figure class="card col-sm-6 col-12 border-0">
-          <img src="./visual/editor1.png" class="card-img-top" alt="screenshot of conference program creator" />
-          <figcaption class="card-body">
-            <h4 class="card-title">
-              Conference Program Creator
-            </h4>
-            <p class="card-text">
-              A drag and drop tool to construct a multi-day multi-track conference program. This tool produces a JSON file that is used by the conference template.
-            </p>
-            <a href="./editor.html" class="btn btn-sm purpleButton">More info and demo</a>
-          </figcaption>
-        </figure>
-        <figure class="card col-sm-6 col-12 border-0">
-          <img src="./visual/template4.png" class="card-img-top" alt="screenshot of reusable conference template" />
-          <figcaption class="card-body">
-            <h4 class="card-title">
-              Reusable Conference Template
-            </h4>
-            <p class="card-text">
-              Created for conferences that need a website, with a call for papers page, program, travel information, etc. The conference chairman simply clones the github repository and follows the instructions to customize their site.
-            </p>
-            <a href="./template.html" class="btn btn-sm purpleButton">More info</a>
-          </figcaption>
-        </figure>
-      </div>
     </main>
 
-    <!-- scripts: bootstrap -->
+    <!-- scripts: bootstrap (required) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
